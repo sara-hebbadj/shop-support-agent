@@ -5,10 +5,26 @@ orders, answers policy and product questions, and **asks a human before any refu
 
 ## Demo
 
-Demo video/Space: pending — to be recorded by Sara.
+Live hosted demo: coming soon (Hugging Face Space).
 
-Planned 3-minute video: an Arabic order-status chat, a French refund that needs a supervisor's approval,
-and a blocked attempt to see another person's order. Run it locally with `python app/app.py`.
+Screenshots from a local run on 8 October 2026 with live AI (`openai/gpt-6-luna` through OpenRouter) and
+the reviewer role set to `supervisor` (`APPROVER_ROLE`). All customers and orders are synthetic. Run it
+locally with `python app/app.py`.
+
+![A French refund waits in the Approvals tab, a supervisor approves it, and the customer is told in the chat](docs/demo/demo.gif)
+*A French refund of AED 398 is queued for a supervisor, approved in the Approvals tab, and confirmed to the customer in the chat.*
+
+![Arabic order-status chat with order ID and email verification](docs/demo/arabic-order-status.png)
+*Arabic order-status chat: the agent asks for the order ID and email, checks that they match, then gives the courier status.*
+
+![A verified customer asks for another customer's order and is refused](docs/demo/blocked-other-customer.png)
+*A verified customer asks about someone else's order (LS-10050) and the agent refuses without that order's email.*
+
+![The Approvals tab with the refund approved by a supervisor](docs/demo/refund-approval.png)
+*Approvals tab: a refund above AED 200 needs a supervisor, and the reviewer's role comes from configuration, not from the page.*
+
+![The French chat after approval](docs/demo/french-refund-approved.png)
+*After the approval, the customer gets the confirmation in French in the same chat.*
 
 ## The problem
 

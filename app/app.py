@@ -2,8 +2,9 @@
 
 Run:  python app/app.py     then open http://127.0.0.1:7860
 
-- With OPENROUTER_API_KEY set, the agent runs in demo mode on MODEL_CHEAP.
-- Without a key it runs OFFLINE: replies come from fixed templates (FakeLLM), not a model.
+- With OPENROUTER_API_KEY and MODEL_CHEAP set, the agent runs live on MODEL_CHEAP.
+- Without them it runs in demo mode (live AI off): replies come from fixed templates (FakeLLM), not a model.
+  On a Hugging Face Space, add OPENROUTER_API_KEY as a secret and MODEL_CHEAP as a variable in the settings.
 - Each browser session may send DEMO_MESSAGE_LIMIT messages (default 20).
 All data is synthetic (fictional shop "Lumi Skin").
 """
@@ -26,7 +27,8 @@ from shop_support_agent.data import load_shop_data  # noqa: E402
 from shop_support_agent.llm import make_client  # noqa: E402
 from shop_support_agent.rules import TEMPLATES  # noqa: E402
 
-OFFLINE = not env("OPENROUTER_API_KEY")
+# Live only when both the key and the model ID are set, so a half-configured Space still starts.
+OFFLINE = not (env("OPENROUTER_API_KEY") and env("MODEL_CHEAP"))
 LIMIT = demo_message_limit()
 agent = SupportAgent(llm=make_client(offline=OFFLINE, role_override="cheap"))
 store = default_store()
@@ -42,9 +44,10 @@ BANNER = (
     "Vous discutez avec un assistant IA, pas avec un humain (boutique fictive, données synthétiques). Les "
     "remboursements et changements d'adresse attendent la validation d'une personne dans l'onglet Approvals ; "
     "au-delà de 200 AED, celle d'un superviseur.\n\n"
-    + ("**Offline mode:** no API key found, so replies come from fixed templates (keyword rules), "
-       "not from a language model." if OFFLINE else f"Demo mode: model `{env('MODEL_CHEAP')}`, "
-       f"{LIMIT} messages per session.")
+    + ("**Demo mode — live AI is off; add OPENROUTER_API_KEY in Space settings to enable** (plus a "
+       "`MODEL_CHEAP` variable). Replies now come from fixed templates (keyword rules), not from a "
+       "language model; verification, approvals and the CRM are the real code."
+       if OFFLINE else f"Live AI: model `{env('MODEL_CHEAP')}`, {LIMIT} messages per session.")
 )
 
 
