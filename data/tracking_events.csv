@@ -1,0 +1,655 @@
+tracking_id,timestamp,event,location
+TRK7844947,2026-01-03T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7844947,2026-01-05T14:00,in_transit,Riyadh Sorting Centre
+TRK7844947,2026-01-07T16:00,out_for_delivery,Jeddah
+TRK7844947,2026-01-09T18:00,delivered,Jeddah
+TRK2903561,2026-01-10T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2903561,2026-01-11T01:20,in_transit,Dubai Hub
+TRK2903561,2026-01-11T17:40,out_for_delivery,Abu Dhabi
+TRK2903561,2026-01-12T10:00,delivered,Abu Dhabi
+TRK2970754,2026-01-14T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2970754,2026-01-14T17:36,in_transit,Dubai Hub
+TRK2970754,2026-01-14T22:12,out_for_delivery,Dubai
+TRK2970754,2026-01-15T02:48,failed_attempt,Dubai
+TRK2970754,2026-01-15T07:24,out_for_delivery,Dubai
+TRK2970754,2026-01-15T12:00,delivered,Dubai
+TRK3583206,2026-01-17T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3583206,2026-01-17T18:40,in_transit,Dubai Hub
+TRK3583206,2026-01-18T03:20,out_for_delivery,Sharjah
+TRK3583206,2026-01-18T12:00,delivered,Sharjah
+TRK5896624,2026-01-22T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5896624,2026-01-23T04:40,in_transit,Dubai Hub
+TRK5896624,2026-01-23T19:20,out_for_delivery,Dubai
+TRK5896624,2026-01-24T10:00,delivered,Dubai
+TRK5587308,2026-01-25T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5587308,2026-01-26T06:20,in_transit,Dubai Hub
+TRK5587308,2026-01-26T23:40,out_for_delivery,Dubai
+TRK5587308,2026-01-27T17:00,delivered,Dubai
+TRK7970771,2026-01-26T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7970771,2026-01-27T05:20,in_transit,Dubai Hub
+TRK7970771,2026-01-27T22:40,out_for_delivery,Abu Dhabi
+TRK7970771,2026-01-28T16:00,delivered,Abu Dhabi
+TRK9094999,2026-01-29T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9094999,2026-01-30T04:20,in_transit,Dubai Hub
+TRK9094999,2026-01-30T21:40,out_for_delivery,Abu Dhabi
+TRK9094999,2026-01-31T15:00,delivered,Abu Dhabi
+TRK8922533,2026-01-30T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8922533,2026-01-31T11:20,in_transit,Dubai Hub
+TRK8922533,2026-02-01T13:40,out_for_delivery,Dubai
+TRK8922533,2026-02-02T16:00,delivered,Dubai
+TRK5089126,2026-02-03T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5089126,2026-02-03T20:00,in_transit,Dubai Hub
+TRK5089126,2026-02-04T07:00,out_for_delivery,Sharjah
+TRK5089126,2026-02-04T18:00,delivered,Sharjah
+TRK8663605,2026-02-02T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8663605,2026-02-03T14:00,in_transit,Dubai Hub
+TRK8663605,2026-02-04T14:00,out_for_delivery,Dubai
+TRK8663605,2026-02-05T14:00,delivered,Dubai
+TRK3426689,2026-02-04T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3426689,2026-02-05T02:00,in_transit,Dubai Hub
+TRK3426689,2026-02-05T19:00,out_for_delivery,Dubai
+TRK3426689,2026-02-06T12:00,delivered,Dubai
+TRK7435505,2026-02-12T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7435505,2026-02-14T12:00,in_transit,Kuwait Sorting Centre
+TRK7435505,2026-02-16T12:00,out_for_delivery,Kuwait City
+TRK7435505,2026-02-18T12:00,delivered,Kuwait City
+TRK4197911,2026-02-12T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4197911,2026-02-12T18:00,in_transit,Dubai Hub
+TRK4197911,2026-02-13T02:00,out_for_delivery,Dubai
+TRK4197911,2026-02-13T10:00,delivered,Dubai
+TRK9526867,2026-02-14T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9526867,2026-02-15T08:48,in_transit,Manama Sorting Centre
+TRK9526867,2026-02-16T04:36,out_for_delivery,Manama
+TRK9526867,2026-02-17T00:24,failed_attempt,Manama
+TRK9526867,2026-02-17T20:12,out_for_delivery,Manama
+TRK9526867,2026-02-18T16:00,delivered,Manama
+TRK3290229,2026-02-14T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3290229,2026-02-15T19:20,in_transit,Muscat Sorting Centre
+TRK3290229,2026-02-17T02:40,out_for_delivery,Muscat
+TRK3290229,2026-02-18T10:00,delivered,Muscat
+TRK7961578,2026-02-21T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7961578,2026-02-23T09:40,in_transit,Doha Sorting Centre
+TRK7961578,2026-02-25T10:20,out_for_delivery,Doha
+TRK7961578,2026-02-27T11:00,delivered,Doha
+TRK6702160,2026-02-22T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6702160,2026-02-22T21:40,in_transit,Dubai Hub
+TRK6702160,2026-02-23T06:20,out_for_delivery,Ras Al Khaimah
+TRK6702160,2026-02-23T15:00,delivered,Ras Al Khaimah
+TRK9518424,2026-02-24T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9518424,2026-02-26T11:40,in_transit,Muscat Sorting Centre
+TRK9518424,2026-02-28T12:20,out_for_delivery,Muscat
+TRK9518424,2026-03-02T13:00,delivered,Muscat
+TRK5482413,2026-02-25T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5482413,2026-02-26T03:20,in_transit,Dubai Hub
+TRK5482413,2026-02-26T19:40,out_for_delivery,Abu Dhabi
+TRK5482413,2026-02-27T12:00,delivered,Abu Dhabi
+TRK1043037,2026-02-26T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1043037,2026-02-27T11:40,in_transit,Dubai Hub
+TRK1043037,2026-02-28T14:20,out_for_delivery,Dubai
+TRK1043037,2026-03-01T17:00,delivered,Dubai
+TRK6008935,2026-03-03T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6008935,2026-03-04T04:40,in_transit,Dubai Hub
+TRK6008935,2026-03-04T21:20,out_for_delivery,Sharjah
+TRK6008935,2026-03-05T14:00,delivered,Sharjah
+TRK9214801,2026-03-06T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9214801,2026-03-07T01:40,in_transit,Dubai Hub
+TRK9214801,2026-03-07T18:20,out_for_delivery,Ras Al Khaimah
+TRK9214801,2026-03-08T11:00,delivered,Ras Al Khaimah
+TRK3493017,2026-03-08T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3493017,2026-03-09T05:40,in_transit,Dubai Hub
+TRK3493017,2026-03-09T22:20,out_for_delivery,Dubai
+TRK3493017,2026-03-10T15:00,delivered,Dubai
+TRK8491822,2026-03-09T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8491822,2026-03-10T12:00,in_transit,Riyadh Sorting Centre
+TRK8491822,2026-03-11T11:00,out_for_delivery,Riyadh
+TRK8491822,2026-03-12T10:00,delivered,Riyadh
+TRK9125900,2026-03-13T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9125900,2026-03-14T04:40,in_transit,Dubai Hub
+TRK9125900,2026-03-14T22:20,out_for_delivery,Sharjah
+TRK9125900,2026-03-15T16:00,delivered,Sharjah
+TRK6790218,2026-03-15T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6790218,2026-03-15T16:48,in_transit,Dubai Hub
+TRK6790218,2026-03-15T22:36,out_for_delivery,Dubai
+TRK6790218,2026-03-16T04:24,failed_attempt,Dubai
+TRK6790218,2026-03-16T10:12,out_for_delivery,Dubai
+TRK6790218,2026-03-16T16:00,delivered,Dubai
+TRK6577416,2026-03-14T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6577416,2026-03-16T04:40,in_transit,Riyadh Sorting Centre
+TRK6577416,2026-03-17T22:20,out_for_delivery,Jeddah
+TRK6577416,2026-03-19T16:00,delivered,Jeddah
+TRK7328534,2026-03-16T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7328534,2026-03-16T23:20,in_transit,Dubai Hub
+TRK7328534,2026-03-17T08:40,out_for_delivery,Ajman
+TRK7328534,2026-03-17T18:00,delivered,Ajman
+TRK8639414,2026-03-17T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8639414,2026-03-17T20:20,in_transit,Dubai Hub
+TRK8639414,2026-03-18T06:40,out_for_delivery,Dubai
+TRK8639414,2026-03-18T17:00,delivered,Dubai
+TRK6398528,2026-03-16T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6398528,2026-03-18T22:40,in_transit,Riyadh Sorting Centre
+TRK6398528,2026-03-21T08:20,out_for_delivery,Riyadh
+TRK6398528,2026-03-23T18:00,delivered,Riyadh
+TRK4165061,2026-03-18T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4165061,2026-03-18T18:40,in_transit,Dubai Hub
+TRK4165061,2026-03-19T03:20,out_for_delivery,Abu Dhabi
+TRK4165061,2026-03-19T12:00,delivered,Abu Dhabi
+TRK5006492,2026-03-19T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5006492,2026-03-20T12:20,in_transit,Dubai Hub
+TRK5006492,2026-03-21T12:40,out_for_delivery,Abu Dhabi
+TRK5006492,2026-03-22T13:00,delivered,Abu Dhabi
+TRK7425184,2026-03-20T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7425184,2026-03-22T13:20,in_transit,Kuwait Sorting Centre
+TRK7425184,2026-03-24T15:40,out_for_delivery,Kuwait City
+TRK7425184,2026-03-26T18:00,delivered,Kuwait City
+TRK4918527,2026-03-23T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4918527,2026-03-24T06:40,in_transit,Dubai Hub
+TRK4918527,2026-03-25T00:20,out_for_delivery,Abu Dhabi
+TRK4918527,2026-03-25T18:00,delivered,Abu Dhabi
+TRK7891662,2026-03-24T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7891662,2026-03-26T12:40,in_transit,Kuwait Sorting Centre
+TRK7891662,2026-03-28T14:20,out_for_delivery,Kuwait City
+TRK7891662,2026-03-30T16:00,delivered,Kuwait City
+TRK1732280,2026-03-26T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1732280,2026-03-26T19:48,in_transit,Dubai Hub
+TRK1732280,2026-03-27T05:36,out_for_delivery,Ras Al Khaimah
+TRK1732280,2026-03-27T15:24,failed_attempt,Ras Al Khaimah
+TRK1732280,2026-03-28T01:12,out_for_delivery,Ras Al Khaimah
+TRK1732280,2026-03-28T11:00,delivered,Ras Al Khaimah
+TRK6338112,2026-03-27T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6338112,2026-03-27T22:12,in_transit,Dubai Hub
+TRK6338112,2026-03-28T07:24,out_for_delivery,Abu Dhabi
+TRK6338112,2026-03-28T16:36,failed_attempt,Abu Dhabi
+TRK6338112,2026-03-29T01:48,out_for_delivery,Abu Dhabi
+TRK6338112,2026-03-29T11:00,delivered,Abu Dhabi
+TRK8935224,2026-04-01T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8935224,2026-04-01T19:00,in_transit,Dubai Hub
+TRK8935224,2026-04-02T03:00,out_for_delivery,Dubai
+TRK8935224,2026-04-02T11:00,delivered,Dubai
+TRK7477326,2026-04-07T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7477326,2026-04-08T20:20,in_transit,Muscat Sorting Centre
+TRK7477326,2026-04-10T05:40,out_for_delivery,Muscat
+TRK7477326,2026-04-11T15:00,delivered,Muscat
+TRK9310235,2026-04-15T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9310235,2026-04-16T17:36,in_transit,Doha Sorting Centre
+TRK9310235,2026-04-17T23:12,out_for_delivery,Doha
+TRK9310235,2026-04-19T04:48,failed_attempt,Doha
+TRK9310235,2026-04-20T10:24,out_for_delivery,Doha
+TRK9310235,2026-04-21T16:00,delivered,Doha
+TRK1621086,2026-04-17T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1621086,2026-04-17T19:00,in_transit,Dubai Hub
+TRK1621086,2026-04-18T05:00,out_for_delivery,Dubai
+TRK1621086,2026-04-18T15:00,delivered,Dubai
+TRK3118060,2026-04-18T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3118060,2026-04-18T19:40,in_transit,Dubai Hub
+TRK3118060,2026-04-19T04:20,out_for_delivery,Ras Al Khaimah
+TRK3118060,2026-04-19T13:00,delivered,Ras Al Khaimah
+TRK6569946,2026-04-24T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6569946,2026-04-24T20:40,in_transit,Dubai Hub
+TRK6569946,2026-04-25T06:20,out_for_delivery,Dubai
+TRK6569946,2026-04-25T16:00,delivered,Dubai
+TRK2683838,2026-04-27T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2683838,2026-04-27T22:40,in_transit,Dubai Hub
+TRK2683838,2026-04-28T07:20,out_for_delivery,Dubai
+TRK2683838,2026-04-28T16:00,delivered,Dubai
+TRK8387112,2026-04-27T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8387112,2026-04-28T05:20,in_transit,Dubai Hub
+TRK8387112,2026-04-28T22:40,out_for_delivery,Abu Dhabi
+TRK8387112,2026-04-29T16:00,delivered,Abu Dhabi
+TRK2672884,2026-04-28T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2672884,2026-04-29T11:20,in_transit,Dubai Hub
+TRK2672884,2026-04-30T10:40,out_for_delivery,Dubai
+TRK2672884,2026-05-01T10:00,delivered,Dubai
+TRK9823994,2026-04-28T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9823994,2026-04-28T20:20,in_transit,Dubai Hub
+TRK9823994,2026-04-29T06:40,out_for_delivery,Dubai
+TRK9823994,2026-04-29T17:00,delivered,Dubai
+TRK8665981,2026-04-30T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8665981,2026-04-30T22:24,in_transit,Dubai Hub
+TRK8665981,2026-05-01T07:48,out_for_delivery,Sharjah
+TRK8665981,2026-05-01T17:12,failed_attempt,Sharjah
+TRK8665981,2026-05-02T02:36,out_for_delivery,Sharjah
+TRK8665981,2026-05-02T12:00,delivered,Sharjah
+TRK1257489,2026-04-30T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1257489,2026-05-01T05:00,in_transit,Dubai Hub
+TRK1257489,2026-05-01T20:00,out_for_delivery,Abu Dhabi
+TRK1257489,2026-05-02T11:00,delivered,Abu Dhabi
+TRK3418526,2026-05-03T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3418526,2026-05-05T03:40,in_transit,Kuwait Sorting Centre
+TRK3418526,2026-05-06T20:20,out_for_delivery,Kuwait City
+TRK3418526,2026-05-08T13:00,delivered,Kuwait City
+TRK7878299,2026-05-05T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7878299,2026-05-06T13:20,in_transit,Dubai Hub
+TRK7878299,2026-05-07T15:40,out_for_delivery,Dubai
+TRK7878299,2026-05-08T18:00,delivered,Dubai
+TRK2255409,2026-05-08T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2255409,2026-05-09T14:40,in_transit,Dubai Hub
+TRK2255409,2026-05-10T16:20,out_for_delivery,Dubai
+TRK2255409,2026-05-11T18:00,delivered,Dubai
+TRK5446344,2026-05-08T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5446344,2026-05-09T00:12,in_transit,Dubai Hub
+TRK5446344,2026-05-09T10:24,out_for_delivery,Dubai
+TRK5446344,2026-05-09T20:36,failed_attempt,Dubai
+TRK5446344,2026-05-10T06:48,out_for_delivery,Dubai
+TRK5446344,2026-05-10T17:00,delivered,Dubai
+TRK6680114,2026-05-09T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6680114,2026-05-09T19:20,in_transit,Dubai Hub
+TRK6680114,2026-05-10T02:40,out_for_delivery,Abu Dhabi
+TRK6680114,2026-05-10T10:00,delivered,Abu Dhabi
+TRK2347467,2026-05-11T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2347467,2026-05-12T13:40,in_transit,Dubai Hub
+TRK2347467,2026-05-13T14:20,out_for_delivery,Sharjah
+TRK2347467,2026-05-14T15:00,delivered,Sharjah
+TRK6512415,2026-05-15T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6512415,2026-05-17T19:20,in_transit,Riyadh Sorting Centre
+TRK6512415,2026-05-20T02:40,out_for_delivery,Jeddah
+TRK6512415,2026-05-22T10:00,delivered,Jeddah
+TRK9952696,2026-05-17T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9952696,2026-05-17T21:12,in_transit,Dubai Hub
+TRK9952696,2026-05-18T06:24,out_for_delivery,Dubai
+TRK9952696,2026-05-18T15:36,failed_attempt,Dubai
+TRK9952696,2026-05-19T00:48,out_for_delivery,Dubai
+TRK9952696,2026-05-19T10:00,delivered,Dubai
+TRK7375499,2026-05-20T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7375499,2026-05-21T06:20,in_transit,Dubai Hub
+TRK7375499,2026-05-21T22:40,out_for_delivery,Abu Dhabi
+TRK7375499,2026-05-22T15:00,delivered,Abu Dhabi
+TRK6312692,2026-05-21T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6312692,2026-05-22T05:20,in_transit,Dubai Hub
+TRK6312692,2026-05-22T22:40,out_for_delivery,Abu Dhabi
+TRK6312692,2026-05-23T16:00,delivered,Abu Dhabi
+TRK9186400,2026-05-24T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9186400,2026-05-24T20:40,in_transit,Dubai Hub
+TRK9186400,2026-05-25T07:20,out_for_delivery,Sharjah
+TRK9186400,2026-05-25T18:00,delivered,Sharjah
+TRK1602286,2026-05-23T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1602286,2026-05-23T20:00,in_transit,Dubai Hub
+TRK1602286,2026-05-24T03:00,out_for_delivery,Abu Dhabi
+TRK1602286,2026-05-24T10:00,delivered,Abu Dhabi
+TRK2147909,2026-05-25T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2147909,2026-05-25T22:12,in_transit,Dubai Hub
+TRK2147909,2026-05-26T07:24,out_for_delivery,Dubai
+TRK2147909,2026-05-26T16:36,failed_attempt,Dubai
+TRK2147909,2026-05-27T01:48,out_for_delivery,Dubai
+TRK2147909,2026-05-27T11:00,delivered,Dubai
+TRK4938791,2026-05-25T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4938791,2026-05-26T03:36,in_transit,Riyadh Sorting Centre
+TRK4938791,2026-05-26T19:12,out_for_delivery,Jeddah
+TRK4938791,2026-05-27T10:48,failed_attempt,Jeddah
+TRK4938791,2026-05-28T02:24,out_for_delivery,Jeddah
+TRK4938791,2026-05-28T18:00,delivered,Jeddah
+TRK5821419,2026-05-28T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5821419,2026-05-29T11:00,in_transit,Dubai Hub
+TRK5821419,2026-05-30T11:00,out_for_delivery,Ras Al Khaimah
+TRK5821419,2026-05-31T11:00,delivered,Ras Al Khaimah
+TRK4816586,2026-05-29T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4816586,2026-05-30T11:40,in_transit,Dubai Hub
+TRK4816586,2026-05-31T12:20,out_for_delivery,Dubai
+TRK4816586,2026-06-01T13:00,delivered,Dubai
+TRK2516313,2026-05-31T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2516313,2026-06-01T03:36,in_transit,Dubai Hub
+TRK2516313,2026-06-01T19:12,out_for_delivery,Abu Dhabi
+TRK2516313,2026-06-02T10:48,failed_attempt,Abu Dhabi
+TRK2516313,2026-06-03T02:24,out_for_delivery,Abu Dhabi
+TRK2516313,2026-06-03T18:00,delivered,Abu Dhabi
+TRK8280833,2026-06-02T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8280833,2026-06-04T21:20,in_transit,Doha Sorting Centre
+TRK8280833,2026-06-07T07:40,out_for_delivery,Doha
+TRK8280833,2026-06-09T18:00,delivered,Doha
+TRK2651601,2026-06-02T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2651601,2026-06-03T04:00,in_transit,Dubai Hub
+TRK2651601,2026-06-03T19:00,out_for_delivery,Ras Al Khaimah
+TRK2651601,2026-06-04T10:00,delivered,Ras Al Khaimah
+TRK8443690,2026-06-07T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8443690,2026-06-07T20:20,in_transit,Dubai Hub
+TRK8443690,2026-06-08T03:40,out_for_delivery,Dubai
+TRK8443690,2026-06-08T11:00,delivered,Dubai
+TRK3791137,2026-06-07T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3791137,2026-06-08T06:20,in_transit,Dubai Hub
+TRK3791137,2026-06-08T23:40,out_for_delivery,Dubai
+TRK3791137,2026-06-09T17:00,delivered,Dubai
+TRK6024207,2026-06-09T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6024207,2026-06-10T21:00,in_transit,Muscat Sorting Centre
+TRK6024207,2026-06-12T06:00,out_for_delivery,Muscat
+TRK6024207,2026-06-13T15:00,delivered,Muscat
+TRK1485654,2026-06-13T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1485654,2026-06-13T19:40,in_transit,Dubai Hub
+TRK1485654,2026-06-14T04:20,out_for_delivery,Dubai
+TRK1485654,2026-06-14T13:00,delivered,Dubai
+TRK1771600,2026-06-13T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1771600,2026-06-14T04:00,in_transit,Dubai Hub
+TRK1771600,2026-06-14T23:00,out_for_delivery,Sharjah
+TRK1771600,2026-06-15T18:00,delivered,Sharjah
+TRK6442103,2026-06-13T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6442103,2026-06-14T01:40,in_transit,Dubai Hub
+TRK6442103,2026-06-14T18:20,out_for_delivery,Dubai
+TRK6442103,2026-06-15T11:00,delivered,Dubai
+TRK1941524,2026-06-14T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1941524,2026-06-14T22:40,in_transit,Dubai Hub
+TRK1941524,2026-06-15T08:20,out_for_delivery,Abu Dhabi
+TRK1941524,2026-06-15T18:00,delivered,Abu Dhabi
+TRK7014016,2026-06-18T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7014016,2026-06-18T20:40,in_transit,Dubai Hub
+TRK7014016,2026-06-19T03:20,out_for_delivery,Sharjah
+TRK7014016,2026-06-19T10:00,delivered,Sharjah
+TRK7288789,2026-06-20T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7288789,2026-06-21T12:40,in_transit,Dubai Hub
+TRK7288789,2026-06-22T11:20,out_for_delivery,Dubai
+TRK7288789,2026-06-23T10:00,delivered,Dubai
+TRK8225725,2026-06-22T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8225725,2026-06-22T17:40,in_transit,Dubai Hub
+TRK8225725,2026-06-23T02:20,out_for_delivery,Ras Al Khaimah
+TRK8225725,2026-06-23T11:00,delivered,Ras Al Khaimah
+TRK3442255,2026-06-21T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3442255,2026-06-22T03:20,in_transit,Dubai Hub
+TRK3442255,2026-06-22T20:40,out_for_delivery,Ajman
+TRK3442255,2026-06-23T14:00,delivered,Ajman
+TRK5096953,2026-06-21T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5096953,2026-06-22T14:40,in_transit,Dubai Hub
+TRK5096953,2026-06-23T15:20,out_for_delivery,Dubai
+TRK5096953,2026-06-24T16:00,delivered,Dubai
+TRK9911492,2026-06-28T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9911492,2026-06-29T18:20,in_transit,Doha Sorting Centre
+TRK9911492,2026-07-01T03:40,out_for_delivery,Doha
+TRK9911492,2026-07-02T13:00,delivered,Doha
+TRK7913081,2026-06-28T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7913081,2026-06-29T05:40,in_transit,Dubai Hub
+TRK7913081,2026-06-29T21:20,out_for_delivery,Sharjah
+TRK7913081,2026-06-30T13:00,delivered,Sharjah
+TRK4020853,2026-06-29T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4020853,2026-06-30T10:40,in_transit,Dubai Hub
+TRK4020853,2026-07-01T12:20,out_for_delivery,Abu Dhabi
+TRK4020853,2026-07-02T14:00,delivered,Abu Dhabi
+TRK3851852,2026-07-01T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3851852,2026-07-02T06:20,in_transit,Dubai Hub
+TRK3851852,2026-07-02T22:40,out_for_delivery,Dubai
+TRK3851852,2026-07-03T15:00,delivered,Dubai
+TRK3937176,2026-07-01T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3937176,2026-07-01T21:00,in_transit,Dubai Hub
+TRK3937176,2026-07-02T04:00,out_for_delivery,Ras Al Khaimah
+TRK3937176,2026-07-02T11:00,delivered,Ras Al Khaimah
+TRK2324869,2026-07-02T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2324869,2026-07-03T03:48,in_transit,Dubai Hub
+TRK2324869,2026-07-03T18:36,out_for_delivery,Ajman
+TRK2324869,2026-07-04T09:24,failed_attempt,Ajman
+TRK2324869,2026-07-05T00:12,out_for_delivery,Ajman
+TRK2324869,2026-07-05T15:00,delivered,Ajman
+TRK7418028,2026-07-04T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7418028,2026-07-05T04:20,in_transit,Dubai Hub
+TRK7418028,2026-07-05T22:40,out_for_delivery,Dubai
+TRK7418028,2026-07-06T17:00,delivered,Dubai
+TRK5040453,2026-07-12T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5040453,2026-07-12T21:00,in_transit,Dubai Hub
+TRK5040453,2026-07-13T04:00,out_for_delivery,Sharjah
+TRK5040453,2026-07-13T11:00,delivered,Sharjah
+TRK9349470,2026-07-13T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9349470,2026-07-14T03:12,in_transit,Riyadh Sorting Centre
+TRK9349470,2026-07-14T18:24,out_for_delivery,Riyadh
+TRK9349470,2026-07-15T09:36,failed_attempt,Riyadh
+TRK9349470,2026-07-16T00:48,out_for_delivery,Riyadh
+TRK9349470,2026-07-16T16:00,delivered,Riyadh
+TRK3401116,2026-07-15T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3401116,2026-07-16T05:20,in_transit,Dubai Hub
+TRK3401116,2026-07-16T22:40,out_for_delivery,Abu Dhabi
+TRK3401116,2026-07-17T16:00,delivered,Abu Dhabi
+TRK4895475,2026-07-15T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4895475,2026-07-15T20:40,in_transit,Dubai Hub
+TRK4895475,2026-07-16T04:20,out_for_delivery,Sharjah
+TRK4895475,2026-07-16T12:00,delivered,Sharjah
+TRK8736811,2026-07-17T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8736811,2026-07-18T12:20,in_transit,Dubai Hub
+TRK8736811,2026-07-19T12:40,out_for_delivery,Dubai
+TRK8736811,2026-07-20T13:00,delivered,Dubai
+TRK5261032,2026-07-17T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5261032,2026-07-18T11:20,in_transit,Dubai Hub
+TRK5261032,2026-07-19T10:40,out_for_delivery,Abu Dhabi
+TRK5261032,2026-07-20T10:00,delivered,Abu Dhabi
+TRK8710313,2026-07-17T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8710313,2026-07-17T19:24,in_transit,Dubai Hub
+TRK8710313,2026-07-18T00:48,out_for_delivery,Abu Dhabi
+TRK8710313,2026-07-18T06:12,failed_attempt,Abu Dhabi
+TRK8710313,2026-07-18T11:36,out_for_delivery,Abu Dhabi
+TRK8710313,2026-07-18T17:00,delivered,Abu Dhabi
+TRK5283671,2026-07-23T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5283671,2026-07-24T12:20,in_transit,Dubai Hub
+TRK5283671,2026-07-25T13:40,out_for_delivery,Ras Al Khaimah
+TRK5283671,2026-07-26T15:00,delivered,Ras Al Khaimah
+TRK1157662,2026-07-24T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1157662,2026-07-26T13:20,in_transit,Riyadh Sorting Centre
+TRK1157662,2026-07-28T15:40,out_for_delivery,Riyadh
+TRK1157662,2026-07-30T18:00,delivered,Riyadh
+TRK8805654,2026-07-31T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8805654,2026-08-01T02:40,in_transit,Dubai Hub
+TRK8805654,2026-08-01T19:20,out_for_delivery,Abu Dhabi
+TRK8805654,2026-08-02T12:00,delivered,Abu Dhabi
+TRK5825658,2026-08-02T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5825658,2026-08-03T06:00,in_transit,Dubai Hub
+TRK5825658,2026-08-03T23:00,out_for_delivery,Abu Dhabi
+TRK5825658,2026-08-04T16:00,delivered,Abu Dhabi
+TRK3650391,2026-08-03T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3650391,2026-08-04T02:20,in_transit,Dubai Hub
+TRK3650391,2026-08-04T19:40,out_for_delivery,Sharjah
+TRK3650391,2026-08-05T13:00,delivered,Sharjah
+TRK2239197,2026-08-05T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2239197,2026-08-05T22:40,in_transit,Dubai Hub
+TRK2239197,2026-08-06T08:20,out_for_delivery,Sharjah
+TRK2239197,2026-08-06T18:00,delivered,Sharjah
+TRK8410995,2026-08-11T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8410995,2026-08-11T18:20,in_transit,Dubai Hub
+TRK8410995,2026-08-12T02:40,out_for_delivery,Dubai
+TRK8410995,2026-08-12T11:00,delivered,Dubai
+TRK6797629,2026-08-16T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6797629,2026-08-17T12:40,in_transit,Dubai Hub
+TRK6797629,2026-08-18T14:20,out_for_delivery,Dubai
+TRK6797629,2026-08-19T16:00,delivered,Dubai
+TRK5195951,2026-08-30T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5195951,2026-08-31T02:00,in_transit,Dubai Hub
+TRK5195951,2026-08-31T18:00,out_for_delivery,Ras Al Khaimah
+TRK5195951,2026-09-01T10:00,failed_attempt,Ras Al Khaimah
+TRK5195951,2026-09-02T02:00,out_for_delivery,Ras Al Khaimah
+TRK5195951,2026-09-02T18:00,delivered,Ras Al Khaimah
+TRK8664433,2026-09-01T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8664433,2026-09-02T05:40,in_transit,Dubai Hub
+TRK8664433,2026-09-02T23:20,out_for_delivery,Ras Al Khaimah
+TRK8664433,2026-09-03T17:00,delivered,Ras Al Khaimah
+TRK7454081,2026-09-03T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7454081,2026-09-04T11:40,in_transit,Muscat Sorting Centre
+TRK7454081,2026-09-05T13:20,out_for_delivery,Muscat
+TRK7454081,2026-09-06T15:00,delivered,Muscat
+TRK9106886,2026-09-06T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9106886,2026-09-06T20:00,in_transit,Dubai Hub
+TRK9106886,2026-09-07T03:00,out_for_delivery,Sharjah
+TRK9106886,2026-09-07T10:00,delivered,Sharjah
+TRK2789344,2026-09-09T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2789344,2026-09-09T20:00,in_transit,Dubai Hub
+TRK2789344,2026-09-10T07:00,out_for_delivery,Abu Dhabi
+TRK2789344,2026-09-10T18:00,delivered,Abu Dhabi
+TRK4979651,2026-09-13T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4979651,2026-09-13T22:24,in_transit,Dubai Hub
+TRK4979651,2026-09-14T08:48,out_for_delivery,Dubai
+TRK4979651,2026-09-14T19:12,failed_attempt,Dubai
+TRK4979651,2026-09-15T05:36,out_for_delivery,Dubai
+TRK4979651,2026-09-15T16:00,delivered,Dubai
+TRK7398231,2026-09-13T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7398231,2026-09-14T14:00,in_transit,Muscat Sorting Centre
+TRK7398231,2026-09-15T16:00,out_for_delivery,Muscat
+TRK7398231,2026-09-16T18:00,delivered,Muscat
+TRK7022335,2026-09-23T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7022335,2026-09-24T09:20,in_transit,Dubai Hub
+TRK7022335,2026-09-25T09:40,out_for_delivery,Abu Dhabi
+TRK7022335,2026-09-26T10:00,delivered,Abu Dhabi
+TRK5963914,2026-09-22T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5963914,2026-09-24T04:00,in_transit,Kuwait Sorting Centre
+TRK5963914,2026-09-25T19:00,out_for_delivery,Kuwait City
+TRK5963914,2026-09-27T10:00,delivered,Kuwait City
+TRK5953150,2026-09-23T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5953150,2026-09-24T12:40,in_transit,Dubai Hub
+TRK5953150,2026-09-25T13:20,out_for_delivery,Dubai
+TRK5953150,2026-09-26T14:00,delivered,Dubai
+TRK1368085,2026-09-24T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1368085,2026-09-24T23:00,in_transit,Dubai Hub
+TRK1368085,2026-09-25T08:00,out_for_delivery,Dubai
+TRK1368085,2026-09-25T17:00,failed_attempt,Dubai
+TRK1368085,2026-09-26T02:00,out_for_delivery,Dubai
+TRK1368085,2026-09-26T11:00,delivered,Dubai
+TRK7640518,2026-09-24T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7640518,2026-09-25T03:40,in_transit,Dubai Hub
+TRK7640518,2026-09-25T22:20,out_for_delivery,Dubai
+TRK7640518,2026-09-26T17:00,delivered,Dubai
+TRK5605016,2026-09-25T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5605016,2026-09-25T21:00,in_transit,Dubai Hub
+TRK5605016,2026-09-26T05:00,out_for_delivery,Ras Al Khaimah
+TRK5605016,2026-09-26T13:00,delivered,Ras Al Khaimah
+TRK1135861,2026-09-25T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1135861,2026-09-25T20:24,in_transit,Dubai Hub
+TRK1135861,2026-09-26T05:48,out_for_delivery,Dubai
+TRK1135861,2026-09-26T15:12,failed_attempt,Dubai
+TRK1135861,2026-09-27T00:36,out_for_delivery,Dubai
+TRK1135861,2026-09-27T10:00,delivered,Dubai
+TRK1822825,2026-09-24T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1822825,2026-09-24T20:20,in_transit,Dubai Hub
+TRK1822825,2026-09-25T05:40,out_for_delivery,Sharjah
+TRK1822825,2026-09-25T15:00,delivered,Sharjah
+TRK9333700,2026-09-24T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9333700,2026-09-25T14:00,in_transit,Dubai Hub
+TRK9333700,2026-09-26T15:00,out_for_delivery,Ras Al Khaimah
+TRK9333700,2026-09-27T16:00,delivered,Ras Al Khaimah
+TRK5801541,2026-09-25T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5801541,2026-09-26T20:40,in_transit,Doha Sorting Centre
+TRK5801541,2026-09-28T05:20,out_for_delivery,Doha
+TRK5801541,2026-09-29T14:00,delivered,Doha
+TRK4860745,2026-09-25T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4860745,2026-09-25T18:48,in_transit,Dubai Hub
+TRK4860745,2026-09-26T04:36,out_for_delivery,Dubai
+TRK4860745,2026-09-26T14:24,failed_attempt,Dubai
+TRK4860745,2026-09-27T00:12,out_for_delivery,Dubai
+TRK4860745,2026-09-27T10:00,delivered,Dubai
+TRK6910964,2026-09-26T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6910964,2026-09-27T14:20,in_transit,Dubai Hub
+TRK6910964,2026-09-28T14:40,out_for_delivery,Sharjah
+TRK6910964,2026-09-29T15:00,delivered,Sharjah
+TRK4674286,2026-09-27T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4674286,2026-09-28T11:20,in_transit,Dubai Hub
+TRK4674286,2026-09-29T12:40,out_for_delivery,Al Ain
+TRK4674286,2026-09-30T14:00,delivered,Al Ain
+TRK4189885,2026-09-26T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4189885,2026-09-27T12:20,in_transit,Dubai Hub
+TRK4189885,2026-09-28T12:40,out_for_delivery,Sharjah
+TRK4189885,2026-09-29T13:00,delivered,Sharjah
+TRK5204819,2026-09-27T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5204819,2026-09-29T11:00,in_transit,Manama Sorting Centre
+TRK5204819,2026-10-01T12:00,out_for_delivery,Manama
+TRK5204819,2026-10-03T13:00,delivered,Manama
+TRK3294774,2026-09-27T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3294774,2026-09-28T06:00,in_transit,Dubai Hub
+TRK3294774,2026-09-28T23:00,out_for_delivery,Sharjah
+TRK3294774,2026-09-29T16:00,delivered,Sharjah
+TRK2630140,2026-09-27T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2630140,2026-09-27T19:40,in_transit,Dubai Hub
+TRK2630140,2026-09-28T05:20,out_for_delivery,Dubai
+TRK2630140,2026-09-28T15:00,delivered,Dubai
+TRK1661401,2026-09-29T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1661401,2026-09-29T21:24,in_transit,Dubai Hub
+TRK1661401,2026-09-30T06:48,out_for_delivery,Dubai
+TRK1661401,2026-09-30T16:12,failed_attempt,Dubai
+TRK1661401,2026-10-01T01:36,out_for_delivery,Dubai
+TRK1661401,2026-10-01T11:00,delivered,Dubai
+TRK6183033,2026-09-28T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6183033,2026-09-29T05:20,in_transit,Dubai Hub
+TRK6183033,2026-09-29T23:40,out_for_delivery,Dubai
+TRK6183033,2026-09-30T18:00,delivered,Dubai
+TRK8395785,2026-09-28T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8395785,2026-09-28T18:48,in_transit,Dubai Hub
+TRK8395785,2026-09-28T23:36,out_for_delivery,Ras Al Khaimah
+TRK8395785,2026-09-29T04:24,failed_attempt,Ras Al Khaimah
+TRK8395785,2026-09-29T09:12,out_for_delivery,Ras Al Khaimah
+TRK8395785,2026-09-29T14:00,delivered,Ras Al Khaimah
+TRK1559763,2026-09-29T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1559763,2026-10-01T14:20,in_transit,Muscat Sorting Centre
+TRK1559763,2026-10-03T14:40,out_for_delivery,Muscat
+TRK1559763,2026-10-05T15:00,delivered,Muscat
+TRK7121355,2026-09-30T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7121355,2026-10-01T13:40,in_transit,Manama Sorting Centre
+TRK7121355,2026-10-02T13:20,out_for_delivery,Manama
+TRK7121355,2026-10-03T13:00,delivered,Manama
+TRK3204724,2026-10-01T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3204724,2026-10-02T12:00,in_transit,Dubai Hub
+TRK3204724,2026-10-03T14:00,out_for_delivery,Dubai
+TRK3204724,2026-10-04T16:00,delivered,Dubai
+TRK2512187,2026-10-02T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2512187,2026-10-02T20:00,in_transit,Dubai Hub
+TRK2512187,2026-10-03T04:00,out_for_delivery,Abu Dhabi
+TRK5951131,2026-10-01T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5951131,2026-10-01T23:00,in_transit,Muscat Sorting Centre
+TRK5951131,2026-10-02T11:00,out_for_delivery,Muscat
+TRK6481437,2026-10-02T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6481437,2026-10-03T13:00,in_transit,Dubai Hub
+TRK6481437,2026-10-04T14:00,out_for_delivery,Abu Dhabi
+TRK6481437,2026-10-05T15:00,delivered,Abu Dhabi
+TRK7970985,2026-10-03T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7970985,2026-10-04T20:00,in_transit,Dubai Hub
+TRK3946751,2026-10-03T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3946751,2026-10-04T01:00,in_transit,Dubai Hub
+TRK3946751,2026-10-04T12:00,out_for_delivery,Dubai
+TRK4368777,2026-10-03T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4368777,2026-10-04T12:40,in_transit,Dubai Hub
+TRK4368777,2026-10-05T12:20,out_for_delivery,Abu Dhabi
+TRK4368777,2026-10-06T12:00,delivered,Abu Dhabi
+TRK3217273,2026-10-02T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3217273,2026-10-03T12:00,in_transit,Dubai Hub
+TRK7138070,2026-10-03T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7138070,2026-10-04T11:00,in_transit,Dubai Hub
+TRK9906224,2026-10-02T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9906224,2026-10-02T19:30,in_transit,Dubai Hub
+TRK9906224,2026-10-03T04:00,out_for_delivery,Abu Dhabi
+TRK9418719,2026-10-03T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9418719,2026-10-04T06:00,in_transit,Dubai Hub
+TRK9418719,2026-10-04T23:00,out_for_delivery,Abu Dhabi
+TRK5572250,2026-10-03T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5572250,2026-10-04T06:00,in_transit,Dubai Hub
+TRK5572250,2026-10-05T00:00,out_for_delivery,Ras Al Khaimah
+TRK3760597,2026-10-03T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3760597,2026-10-04T01:00,in_transit,Dubai Hub
+TRK5311242,2026-10-03T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5311242,2026-10-04T21:00,in_transit,Doha Sorting Centre
+TRK9084065,2026-10-04T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK9084065,2026-10-05T06:00,in_transit,Dubai Hub
+TRK5951651,2026-10-04T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5951651,2026-10-05T21:00,in_transit,Dubai Hub
+TRK6682698,2026-10-04T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK6682698,2026-10-05T07:00,in_transit,Dubai Hub
+TRK2932227,2026-10-05T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2932227,2026-10-06T03:00,in_transit,Riyadh Sorting Centre
+TRK2932227,2026-10-06T18:00,out_for_delivery,Jeddah
+TRK8857296,2026-10-04T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK8857296,2026-10-05T06:00,in_transit,Muscat Sorting Centre
+TRK2263313,2026-10-04T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2263313,2026-10-05T20:00,in_transit,Dubai Hub
+TRK3361510,2026-10-04T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3361510,2026-10-05T06:00,in_transit,Dubai Hub
+TRK3361510,2026-10-06T00:00,out_for_delivery,Sharjah
+TRK4785186,2026-10-06T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4785186,2026-10-07T21:00,in_transit,Dubai Hub
+TRK7667458,2026-10-05T09:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7667458,2026-10-06T00:00,in_transit,Dubai Hub
+TRK7136687,2026-10-05T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7136687,2026-10-06T08:30,in_transit,Dubai Hub
+TRK7136687,2026-10-07T03:00,out_for_delivery,Dubai
+TRK2515030,2026-10-05T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2515030,2026-10-06T20:00,in_transit,Dubai Hub
+TRK7619862,2026-10-05T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7619862,2026-10-05T23:00,in_transit,Dubai Hub
+TRK1233516,2026-10-06T14:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK1233516,2026-10-06T20:00,in_transit,Dubai Hub
+TRK1233516,2026-10-07T02:00,out_for_delivery,Abu Dhabi
+TRK5436878,2026-10-06T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5436878,2026-10-07T01:00,in_transit,Dubai Hub
+TRK3073474,2026-10-06T13:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK3073474,2026-10-07T18:00,in_transit,Doha Sorting Centre
+TRK7183841,2026-10-06T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK7183841,2026-10-07T14:00,in_transit,Dubai Hub
+TRK5398338,2026-10-06T10:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK5398338,2026-10-07T15:00,in_transit,Dubai Hub
+TRK2817745,2026-10-06T11:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK2817745,2026-10-07T01:00,in_transit,Riyadh Sorting Centre
+TRK4922880,2026-10-06T12:00,picked_up,"Lumi Skin Warehouse, Dubai"
+TRK4922880,2026-10-07T22:00,in_transit,Dubai Hub

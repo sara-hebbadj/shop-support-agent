@@ -1,0 +1,5 @@
+language,n,task_success_pct,tool_use_correct_pct,decision_correct_pct,conversations_with_violations,violation_count,errors,avg_cost_usd,avg_latency_ms,avg_judge_tone,avg_judge_helpfulness
+ar,40,67.5,82.5,85.0,0,0,0,0.0,17,3.0,3.0
+en,40,72.5,80.0,87.5,0,0,0,0.0,11,3.0,3.0
+fr,40,65.0,77.5,85.0,0,0,0,0.0,11,3.0,3.0
+all,120,68.3,80.0,85.8,0,0,0,0.0,13,3.0,3.0

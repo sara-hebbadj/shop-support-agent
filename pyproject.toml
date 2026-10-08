@@ -1,0 +1,45 @@
+[project]
+name = "shop-support-agent"
+version = "0.1.0"
+description = "Supervised AI customer-service agent for a fictional skincare shop (Arabic, English, French) with courier tracking, a CRM over MCP and human approval."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Sara Hebbadj" }]
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=1.0",
+    "openai>=1.40",
+    "python-dotenv>=1.0",
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "httpx>=0.27",
+    "mcp>=2.0",
+    "gradio>=5.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# These files are mostly Arabic/English/French text (policies, templates, test conversations).
+"data/generate.py" = ["E501"]
+"src/shop_support_agent/rules.py" = ["E501"]
+"evals/make_conversations.py" = ["E501"]

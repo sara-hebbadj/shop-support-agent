@@ -1,0 +1,201 @@
+order_id,customer_id,order_date,status,tracking_id,total_aed,payment_method,destination_country,shipped_date,delivered_date
+LS-10001,C011,2026-01-03,delivered,TRK7844947,69,cod,Saudi Arabia,2026-01-03,2026-01-09
+LS-10002,C020,2026-01-06,cancelled,,298,card,United Arab Emirates,,
+LS-10003,C022,2026-01-06,cancelled,,239,card,United Arab Emirates,,
+LS-10004,C008,2026-01-10,delivered,TRK2903561,344,cod,United Arab Emirates,2026-01-10,2026-01-12
+LS-10005,C022,2026-01-10,cancelled,,85,cod,United Arab Emirates,,
+LS-10006,C037,2026-01-13,returned,TRK2970754,121,card,United Arab Emirates,2026-01-14,2026-01-15
+LS-10007,C044,2026-01-16,returned,TRK3583206,525,cod,United Arab Emirates,2026-01-17,2026-01-18
+LS-10008,C010,2026-01-21,cancelled,,184,card,United Arab Emirates,,
+LS-10009,C032,2026-01-21,delivered,TRK5896624,245,cod,United Arab Emirates,2026-01-22,2026-01-24
+LS-10010,C029,2026-01-23,cancelled,,397,cod,United Arab Emirates,,
+LS-10011,C020,2026-01-24,delivered,TRK5587308,55,card,United Arab Emirates,2026-01-25,2026-01-27
+LS-10012,C002,2026-01-26,delivered,TRK7970771,233,card,United Arab Emirates,2026-01-26,2026-01-28
+LS-10013,C048,2026-01-28,delivered,TRK9094999,75,card,United Arab Emirates,2026-01-29,2026-01-31
+LS-10014,C032,2026-01-29,delivered,TRK8922533,381,card,United Arab Emirates,2026-01-30,2026-02-02
+LS-10015,C015,2026-02-02,delivered,TRK5089126,310,cod,United Arab Emirates,2026-02-03,2026-02-04
+LS-10016,C016,2026-02-02,delivered,TRK8663605,89,card,United Arab Emirates,2026-02-02,2026-02-05
+LS-10017,C029,2026-02-03,delivered,TRK3426689,89,card,United Arab Emirates,2026-02-04,2026-02-06
+LS-10018,C006,2026-02-12,returned,TRK7435505,148,cod,Kuwait,2026-02-12,2026-02-18
+LS-10019,C046,2026-02-12,delivered,TRK4197911,190,card,United Arab Emirates,2026-02-12,2026-02-13
+LS-10020,C055,2026-02-13,returned,TRK9526867,174,card,Bahrain,2026-02-14,2026-02-18
+LS-10021,C004,2026-02-14,delivered,TRK3290229,45,card,Oman,2026-02-14,2026-02-18
+LS-10022,C024,2026-02-17,cancelled,,198,card,United Arab Emirates,,
+LS-10023,C028,2026-02-17,cancelled,,333,card,United Arab Emirates,,
+LS-10024,C012,2026-02-21,delivered,TRK7961578,302,cod,Qatar,2026-02-21,2026-02-27
+LS-10025,C047,2026-02-21,delivered,TRK6702160,243,cod,United Arab Emirates,2026-02-22,2026-02-23
+LS-10026,C004,2026-02-24,returned,TRK9518424,75,card,Oman,2026-02-24,2026-03-02
+LS-10027,C049,2026-02-25,returned,TRK5482413,99,card,United Arab Emirates,2026-02-25,2026-02-27
+LS-10028,C041,2026-02-26,delivered,TRK1043037,149,cod,United Arab Emirates,2026-02-26,2026-03-01
+LS-10029,C019,2026-03-02,cancelled,,155,card,United Arab Emirates,,
+LS-10030,C003,2026-03-03,delivered,TRK6008935,205,cod,United Arab Emirates,2026-03-03,2026-03-05
+LS-10031,C052,2026-03-05,delivered,TRK9214801,171,cod,United Arab Emirates,2026-03-06,2026-03-08
+LS-10032,C020,2026-03-08,delivered,TRK3493017,168,card,United Arab Emirates,2026-03-08,2026-03-10
+LS-10033,C039,2026-03-08,delivered,TRK8491822,386,card,Saudi Arabia,2026-03-09,2026-03-12
+LS-10034,C030,2026-03-13,delivered,TRK9125900,255,card,United Arab Emirates,2026-03-13,2026-03-15
+LS-10035,C009,2026-03-14,delivered,TRK6790218,85,cod,United Arab Emirates,2026-03-15,2026-03-16
+LS-10036,C031,2026-03-14,delivered,TRK6577416,198,card,Saudi Arabia,2026-03-14,2026-03-19
+LS-10037,C022,2026-03-15,returned,TRK7328534,72,card,United Arab Emirates,2026-03-16,2026-03-17
+LS-10038,C037,2026-03-16,delivered,TRK8639414,79,cod,United Arab Emirates,2026-03-17,2026-03-18
+LS-10039,C039,2026-03-16,delivered,TRK6398528,79,cod,Saudi Arabia,2026-03-16,2026-03-23
+LS-10040,C059,2026-03-17,delivered,TRK4165061,170,card,United Arab Emirates,2026-03-18,2026-03-19
+LS-10041,C036,2026-03-18,delivered,TRK5006492,164,card,United Arab Emirates,2026-03-19,2026-03-22
+LS-10042,C006,2026-03-19,delivered,TRK7425184,218,cod,Kuwait,2026-03-20,2026-03-26
+LS-10043,C028,2026-03-22,delivered,TRK4918527,307,cod,United Arab Emirates,2026-03-23,2026-03-25
+LS-10044,C006,2026-03-24,delivered,TRK7891662,392,card,Kuwait,2026-03-24,2026-03-30
+LS-10045,C017,2026-03-26,delivered,TRK1732280,79,card,United Arab Emirates,2026-03-26,2026-03-28
+LS-10046,C048,2026-03-26,delivered,TRK6338112,462,card,United Arab Emirates,2026-03-27,2026-03-29
+LS-10047,C029,2026-03-31,delivered,TRK8935224,238,card,United Arab Emirates,2026-04-01,2026-04-02
+LS-10048,C034,2026-04-01,cancelled,,95,card,Oman,,
+LS-10049,C038,2026-04-07,delivered,TRK7477326,69,cod,Oman,2026-04-07,2026-04-11
+LS-10050,C043,2026-04-10,cancelled,,95,card,United Arab Emirates,,
+LS-10051,C005,2026-04-15,delivered,TRK9310235,364,card,Qatar,2026-04-15,2026-04-21
+LS-10052,C050,2026-04-16,delivered,TRK1621086,374,card,United Arab Emirates,2026-04-17,2026-04-18
+LS-10053,C023,2026-04-17,delivered,TRK3118060,398,card,United Arab Emirates,2026-04-18,2026-04-19
+LS-10054,C022,2026-04-18,cancelled,,372,cod,United Arab Emirates,,
+LS-10055,C057,2026-04-23,delivered,TRK6569946,390,card,United Arab Emirates,2026-04-24,2026-04-25
+LS-10056,C042,2026-04-26,delivered,TRK2683838,352,card,United Arab Emirates,2026-04-27,2026-04-28
+LS-10057,C059,2026-04-26,delivered,TRK8387112,228,card,United Arab Emirates,2026-04-27,2026-04-29
+LS-10058,C032,2026-04-27,delivered,TRK2672884,85,cod,United Arab Emirates,2026-04-28,2026-05-01
+LS-10059,C027,2026-04-28,delivered,TRK9823994,99,card,United Arab Emirates,2026-04-28,2026-04-29
+LS-10060,C003,2026-04-29,delivered,TRK8665981,49,card,United Arab Emirates,2026-04-30,2026-05-02
+LS-10061,C056,2026-04-29,returned,TRK1257489,295,card,United Arab Emirates,2026-04-30,2026-05-02
+LS-10062,C006,2026-05-03,delivered,TRK3418526,139,card,Kuwait,2026-05-03,2026-05-08
+LS-10063,C045,2026-05-04,delivered,TRK7878299,416,card,United Arab Emirates,2026-05-05,2026-05-08
+LS-10064,C031,2026-05-05,cancelled,,297,card,Saudi Arabia,,
+LS-10065,C045,2026-05-07,delivered,TRK2255409,704,card,United Arab Emirates,2026-05-08,2026-05-11
+LS-10066,C053,2026-05-08,cancelled,,72,card,United Arab Emirates,,
+LS-10067,C053,2026-05-08,delivered,TRK5446344,204,card,United Arab Emirates,2026-05-08,2026-05-10
+LS-10068,C035,2026-05-09,delivered,TRK6680114,342,card,United Arab Emirates,2026-05-09,2026-05-10
+LS-10069,C045,2026-05-09,cancelled,,343,card,United Arab Emirates,,
+LS-10070,C018,2026-05-11,delivered,TRK2347467,449,card,United Arab Emirates,2026-05-11,2026-05-14
+LS-10071,C031,2026-05-15,delivered,TRK6512415,333,cod,Saudi Arabia,2026-05-15,2026-05-22
+LS-10072,C050,2026-05-16,delivered,TRK9952696,238,cod,United Arab Emirates,2026-05-17,2026-05-19
+LS-10073,C048,2026-05-20,delivered,TRK7375499,95,cod,United Arab Emirates,2026-05-20,2026-05-22
+LS-10074,C056,2026-05-21,delivered,TRK6312692,335,cod,United Arab Emirates,2026-05-21,2026-05-23
+LS-10075,C018,2026-05-23,delivered,TRK9186400,198,card,United Arab Emirates,2026-05-24,2026-05-25
+LS-10076,C049,2026-05-23,delivered,TRK1602286,237,card,United Arab Emirates,2026-05-23,2026-05-24
+LS-10077,C001,2026-05-24,returned,TRK2147909,198,card,United Arab Emirates,2026-05-25,2026-05-27
+LS-10078,C031,2026-05-24,delivered,TRK4938791,119,card,Saudi Arabia,2026-05-25,2026-05-28
+LS-10079,C052,2026-05-27,delivered,TRK5821419,72,card,United Arab Emirates,2026-05-28,2026-05-31
+LS-10080,C053,2026-05-28,returned,TRK4816586,75,card,United Arab Emirates,2026-05-29,2026-06-01
+LS-10081,C056,2026-05-30,delivered,TRK2516313,178,card,United Arab Emirates,2026-05-31,2026-06-03
+LS-10082,C012,2026-06-01,delivered,TRK8280833,55,card,Qatar,2026-06-02,2026-06-09
+LS-10083,C047,2026-06-02,delivered,TRK2651601,164,card,United Arab Emirates,2026-06-02,2026-06-04
+LS-10084,C045,2026-06-04,cancelled,,164,card,United Arab Emirates,,
+LS-10085,C027,2026-06-07,returned,TRK8443690,110,card,United Arab Emirates,2026-06-07,2026-06-08
+LS-10086,C041,2026-06-07,returned,TRK3791137,85,cod,United Arab Emirates,2026-06-07,2026-06-09
+LS-10087,C004,2026-06-08,delivered,TRK6024207,236,card,Oman,2026-06-09,2026-06-13
+LS-10088,C032,2026-06-12,delivered,TRK1485654,284,cod,United Arab Emirates,2026-06-13,2026-06-14
+LS-10089,C051,2026-06-12,returned,TRK1771600,164,card,United Arab Emirates,2026-06-13,2026-06-15
+LS-10090,C037,2026-06-13,delivered,TRK6442103,198,card,United Arab Emirates,2026-06-13,2026-06-15
+LS-10091,C028,2026-06-14,delivered,TRK1941524,85,card,United Arab Emirates,2026-06-14,2026-06-15
+LS-10092,C009,2026-06-15,cancelled,,154,cod,United Arab Emirates,,
+LS-10093,C015,2026-06-17,delivered,TRK7014016,284,card,United Arab Emirates,2026-06-18,2026-06-19
+LS-10094,C001,2026-06-20,delivered,TRK7288789,511,card,United Arab Emirates,2026-06-20,2026-06-23
+LS-10095,C017,2026-06-21,delivered,TRK8225725,581,card,United Arab Emirates,2026-06-22,2026-06-23
+LS-10096,C019,2026-06-21,delivered,TRK3442255,547,cod,United Arab Emirates,2026-06-21,2026-06-23
+LS-10097,C020,2026-06-21,returned,TRK5096953,203,card,United Arab Emirates,2026-06-21,2026-06-24
+LS-10098,C005,2026-06-27,delivered,TRK9911492,171,cod,Qatar,2026-06-28,2026-07-02
+LS-10099,C030,2026-06-28,delivered,TRK7913081,267,card,United Arab Emirates,2026-06-28,2026-06-30
+LS-10100,C049,2026-06-28,delivered,TRK4020853,89,cod,United Arab Emirates,2026-06-29,2026-07-02
+LS-10101,C020,2026-07-01,delivered,TRK3851852,189,cod,United Arab Emirates,2026-07-01,2026-07-03
+LS-10102,C023,2026-07-01,delivered,TRK3937176,144,card,United Arab Emirates,2026-07-01,2026-07-02
+LS-10103,C019,2026-07-02,delivered,TRK2324869,200,cod,United Arab Emirates,2026-07-02,2026-07-05
+LS-10104,C042,2026-07-04,delivered,TRK7418028,412,card,United Arab Emirates,2026-07-04,2026-07-06
+LS-10105,C014,2026-07-11,delivered,TRK5040453,147,cod,United Arab Emirates,2026-07-12,2026-07-13
+LS-10106,C039,2026-07-13,delivered,TRK9349470,92,card,Saudi Arabia,2026-07-13,2026-07-16
+LS-10107,C056,2026-07-14,delivered,TRK3401116,158,card,United Arab Emirates,2026-07-15,2026-07-17
+LS-10108,C040,2026-07-15,delivered,TRK4895475,89,card,United Arab Emirates,2026-07-15,2026-07-16
+LS-10109,C029,2026-07-16,delivered,TRK8736811,555,card,United Arab Emirates,2026-07-17,2026-07-20
+LS-10110,C002,2026-07-17,returned,TRK5261032,327,card,United Arab Emirates,2026-07-17,2026-07-20
+LS-10111,C036,2026-07-17,delivered,TRK8710313,49,cod,United Arab Emirates,2026-07-17,2026-07-18
+LS-10112,C017,2026-07-23,delivered,TRK5283671,238,card,United Arab Emirates,2026-07-23,2026-07-26
+LS-10113,C039,2026-07-24,delivered,TRK1157662,224,card,Saudi Arabia,2026-07-24,2026-07-30
+LS-10114,C026,2026-07-30,delivered,TRK8805654,359,card,United Arab Emirates,2026-07-31,2026-08-02
+LS-10115,C008,2026-08-01,delivered,TRK5825658,616,card,United Arab Emirates,2026-08-02,2026-08-04
+LS-10116,C018,2026-08-02,delivered,TRK3650391,119,cod,United Arab Emirates,2026-08-03,2026-08-05
+LS-10117,C044,2026-08-05,delivered,TRK2239197,89,card,United Arab Emirates,2026-08-05,2026-08-06
+LS-10118,C020,2026-08-11,delivered,TRK8410995,238,card,United Arab Emirates,2026-08-11,2026-08-12
+LS-10119,C029,2026-08-16,delivered,TRK6797629,238,card,United Arab Emirates,2026-08-16,2026-08-19
+LS-10120,C010,2026-08-23,cancelled,,191,card,United Arab Emirates,,
+LS-10121,C015,2026-08-27,cancelled,,218,card,United Arab Emirates,,
+LS-10122,C052,2026-08-30,delivered,TRK5195951,95,card,United Arab Emirates,2026-08-30,2026-09-02
+LS-10123,C017,2026-08-31,delivered,TRK8664433,438,card,United Arab Emirates,2026-09-01,2026-09-03
+LS-10124,C026,2026-09-01,cancelled,,191,cod,United Arab Emirates,,
+LS-10125,C045,2026-09-01,cancelled,,357,cod,United Arab Emirates,,
+LS-10126,C038,2026-09-03,delivered,TRK7454081,158,cod,Oman,2026-09-03,2026-09-06
+LS-10127,C015,2026-09-06,delivered,TRK9106886,110,card,United Arab Emirates,2026-09-06,2026-09-07
+LS-10128,C008,2026-09-08,delivered,TRK2789344,89,cod,United Arab Emirates,2026-09-09,2026-09-10
+LS-10129,C053,2026-09-12,delivered,TRK4979651,109,cod,United Arab Emirates,2026-09-13,2026-09-15
+LS-10130,C038,2026-09-13,delivered,TRK7398231,507,cod,Oman,2026-09-13,2026-09-16
+LS-10131,C028,2026-09-22,delivered,TRK7022335,257,card,United Arab Emirates,2026-09-23,2026-09-26
+LS-10132,C033,2026-09-22,delivered,TRK5963914,65,cod,Kuwait,2026-09-22,2026-09-27
+LS-10133,C037,2026-09-23,delivered,TRK5953150,95,cod,United Arab Emirates,2026-09-23,2026-09-26
+LS-10134,C053,2026-09-23,delivered,TRK1368085,129,card,United Arab Emirates,2026-09-24,2026-09-26
+LS-10135,C057,2026-09-23,delivered,TRK7640518,154,cod,United Arab Emirates,2026-09-24,2026-09-26
+LS-10136,C023,2026-09-24,delivered,TRK5605016,256,card,United Arab Emirates,2026-09-25,2026-09-26
+LS-10137,C032,2026-09-24,delivered,TRK1135861,161,card,United Arab Emirates,2026-09-25,2026-09-27
+LS-10138,C040,2026-09-24,delivered,TRK1822825,354,card,United Arab Emirates,2026-09-24,2026-09-25
+LS-10139,C047,2026-09-24,delivered,TRK9333700,398,card,United Arab Emirates,2026-09-24,2026-09-27
+LS-10140,C012,2026-09-25,delivered,TRK5801541,89,card,Qatar,2026-09-25,2026-09-29
+LS-10141,C016,2026-09-25,delivered,TRK4860745,154,card,United Arab Emirates,2026-09-25,2026-09-27
+LS-10142,C018,2026-09-25,delivered,TRK6910964,628,cod,United Arab Emirates,2026-09-26,2026-09-29
+LS-10143,C007,2026-09-26,delivered,TRK4674286,297,cod,United Arab Emirates,2026-09-27,2026-09-30
+LS-10144,C030,2026-09-26,delivered,TRK4189885,570,cod,United Arab Emirates,2026-09-26,2026-09-29
+LS-10145,C055,2026-09-26,delivered,TRK5204819,298,cod,Bahrain,2026-09-27,2026-10-03
+LS-10146,C018,2026-09-27,delivered,TRK3294774,149,card,United Arab Emirates,2026-09-27,2026-09-29
+LS-10147,C032,2026-09-27,delivered,TRK2630140,362,card,United Arab Emirates,2026-09-27,2026-09-28
+LS-10148,C042,2026-09-28,delivered,TRK1661401,55,card,United Arab Emirates,2026-09-29,2026-10-01
+LS-10149,C045,2026-09-28,delivered,TRK6183033,79,card,United Arab Emirates,2026-09-28,2026-09-30
+LS-10150,C052,2026-09-28,delivered,TRK8395785,65,cod,United Arab Emirates,2026-09-28,2026-09-29
+LS-10151,C034,2026-09-29,delivered,TRK1559763,119,card,Oman,2026-09-29,2026-10-05
+LS-10152,C055,2026-09-29,delivered,TRK7121355,138,cod,Bahrain,2026-09-30,2026-10-03
+LS-10153,C046,2026-09-30,delivered,TRK3204724,171,card,United Arab Emirates,2026-10-01,2026-10-04
+LS-10154,C028,2026-10-01,shipped,TRK2512187,110,card,United Arab Emirates,2026-10-02,
+LS-10155,C038,2026-10-01,shipped,TRK5951131,49,card,Oman,2026-10-01,
+LS-10156,C054,2026-10-01,delivered,TRK6481437,69,card,United Arab Emirates,2026-10-02,2026-10-05
+LS-10157,C008,2026-10-02,shipped,TRK7970985,75,card,United Arab Emirates,2026-10-03,
+LS-10158,C020,2026-10-02,shipped,TRK3946751,89,cod,United Arab Emirates,2026-10-03,
+LS-10159,C036,2026-10-02,delivered,TRK4368777,79,card,United Arab Emirates,2026-10-03,2026-10-06
+LS-10160,C046,2026-10-02,shipped,TRK3217273,218,card,United Arab Emirates,2026-10-02,
+LS-10161,C049,2026-10-02,shipped,TRK7138070,267,card,United Arab Emirates,2026-10-03,
+LS-10162,C056,2026-10-02,shipped,TRK9906224,154,card,United Arab Emirates,2026-10-02,
+LS-10163,C013,2026-10-03,shipped,TRK9418719,249,card,United Arab Emirates,2026-10-03,
+LS-10164,C047,2026-10-03,shipped,TRK5572250,299,card,United Arab Emirates,2026-10-03,
+LS-10165,C050,2026-10-03,shipped,TRK3760597,357,cod,United Arab Emirates,2026-10-03,
+LS-10166,C058,2026-10-03,shipped,TRK5311242,412,card,Qatar,2026-10-03,
+LS-10167,C009,2026-10-04,shipped,TRK9084065,92,card,United Arab Emirates,2026-10-04,
+LS-10168,C014,2026-10-04,shipped,TRK5951651,267,card,United Arab Emirates,2026-10-04,
+LS-10169,C022,2026-10-04,shipped,TRK6682698,186,card,United Arab Emirates,2026-10-04,
+LS-10170,C031,2026-10-04,shipped,TRK2932227,190,card,Saudi Arabia,2026-10-05,
+LS-10171,C034,2026-10-04,shipped,TRK8857296,95,cod,Oman,2026-10-04,
+LS-10172,C044,2026-10-04,shipped,TRK2263313,390,cod,United Arab Emirates,2026-10-04,
+LS-10173,C051,2026-10-04,shipped,TRK3361510,233,card,United Arab Emirates,2026-10-04,
+LS-10174,C007,2026-10-05,shipped,TRK4785186,72,card,United Arab Emirates,2026-10-06,
+LS-10175,C010,2026-10-05,shipped,TRK7667458,75,card,United Arab Emirates,2026-10-05,
+LS-10176,C016,2026-10-05,shipped,TRK7136687,177,card,United Arab Emirates,2026-10-05,
+LS-10177,C040,2026-10-05,shipped,TRK2515030,385,card,United Arab Emirates,2026-10-05,
+LS-10178,C045,2026-10-05,shipped,TRK7619862,119,cod,United Arab Emirates,2026-10-05,
+LS-10179,C049,2026-10-05,shipped,TRK1233516,170,card,United Arab Emirates,2026-10-06,
+LS-10180,C049,2026-10-05,shipped,TRK5436878,72,cod,United Arab Emirates,2026-10-06,
+LS-10181,C012,2026-10-06,shipped,TRK3073474,79,card,Qatar,2026-10-06,
+LS-10182,C019,2026-10-06,processing,,177,cod,United Arab Emirates,,
+LS-10183,C021,2026-10-06,shipped,TRK7183841,170,cod,United Arab Emirates,2026-10-06,
+LS-10184,C024,2026-10-06,shipped,TRK5398338,171,cod,United Arab Emirates,2026-10-06,
+LS-10185,C024,2026-10-06,processing,,363,card,United Arab Emirates,,
+LS-10186,C037,2026-10-06,processing,,188,cod,United Arab Emirates,,
+LS-10187,C039,2026-10-06,shipped,TRK2817745,287,card,Saudi Arabia,2026-10-06,
+LS-10188,C056,2026-10-06,shipped,TRK4922880,65,card,United Arab Emirates,2026-10-06,
+LS-10189,C015,2026-10-07,processing,,45,cod,United Arab Emirates,,
+LS-10190,C025,2026-10-07,processing,,124,card,United Arab Emirates,,
+LS-10191,C030,2026-10-07,processing,,158,card,United Arab Emirates,,
+LS-10192,C036,2026-10-07,processing,,89,cod,United Arab Emirates,,
+LS-10193,C056,2026-10-07,processing,,72,cod,United Arab Emirates,,
+LS-10194,C059,2026-10-07,processing,,378,card,United Arab Emirates,,
+LS-10195,C003,2026-10-08,processing,,79,card,United Arab Emirates,,
+LS-10196,C004,2026-10-08,processing,,144,cod,Oman,,
+LS-10197,C006,2026-10-08,processing,,161,cod,Kuwait,,
+LS-10198,C036,2026-10-08,processing,,79,cod,United Arab Emirates,,
+LS-10199,C043,2026-10-08,processing,,642,card,United Arab Emirates,,
+LS-10200,C051,2026-10-08,processing,,79,cod,United Arab Emirates,,

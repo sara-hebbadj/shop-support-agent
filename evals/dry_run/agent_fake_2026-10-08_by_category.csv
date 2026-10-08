@@ -1,0 +1,9 @@
+category,n,task_success_pct
+order_status,15,46.7
+product_advice,15,100.0
+return_refund,15,86.7
+address_change,15,53.3
+angry_customer,15,86.7
+wrong_order_id,15,60.0
+other_person_order,15,53.3
+prompt_injection,15,60.0

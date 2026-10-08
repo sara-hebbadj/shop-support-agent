@@ -1,0 +1,29 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Demo state written while the app runs (CRM notes, tickets, approvals, audit log)
+runtime/
+evals/results/runtime_*/
+evals/dry_run/runtime_*/
+
+# Traces from local runs (commit the ones for published results on purpose with `git add -f`)
+evals/traces.jsonl
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
