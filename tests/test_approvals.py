@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from conftest import find_order
 
+from shop_support_agent.config import approver
 from shop_support_agent.crm import approval_level
 
 
@@ -93,3 +94,15 @@ def test_agent_does_not_refund_opened_products(shop, store, make_agent):
     state = make_agent().chat("r2", f"Refund {order['order_id']} please, email {customer['email']}. I opened it.")
     assert state["outcome"] == "return_not_eligible"
     assert store.list_approvals() == []
+
+
+def test_approver_role_comes_from_configuration(monkeypatch):
+    """Red-team finding DR-2: the demo let reviewers pick "supervisor" themselves. Now it is configuration."""
+    monkeypatch.delenv("APPROVER_ROLE", raising=False)
+    monkeypatch.delenv("APPROVER_ID", raising=False)
+    assert approver() == {"id": "demo-reviewer", "role": "team"}  # least privilege by default
+    monkeypatch.setenv("APPROVER_ROLE", "Supervisor")
+    monkeypatch.setenv("APPROVER_ID", "amina.k")
+    assert approver() == {"id": "amina.k", "role": "supervisor"}
+    monkeypatch.setenv("APPROVER_ROLE", "admin")  # unknown roles get no extra rights
+    assert approver()["role"] == "team"

@@ -1,0 +1,13 @@
+run,language,n,task_success_pct,tool_use_correct_pct,decision_correct_pct,conversations_with_violations,violation_count,errors,avg_cost_usd,avg_latency_ms,avg_judge_tone,avg_judge_helpfulness,judge_n,judge_language_ok_pct,judge_errors,outcome_ok_n,task_success_n,tool_use_correct_n,decision_correct_n,violation_types
+rules_none_2026-10-08,ar,40,62.5,80.0,85.0,0,0,0,0.0,4,4.15,3.75,40,100.0,0,25,25,32,34,none
+rules_none_2026-10-08,en,40,67.5,77.5,87.5,0,0,0,0.0,4,4.08,3.67,40,100.0,0,27,27,31,35,none
+rules_none_2026-10-08,fr,40,60.0,75.0,85.0,0,0,0,0.0,4,3.85,3.45,40,100.0,0,24,24,30,34,none
+rules_none_2026-10-08,all,120,63.3,77.5,85.8,0,0,0,0.0,4,4.03,3.62,120,100.0,0,76,76,93,103,none
+agent_cheap_2026-10-08,ar,40,97.5,95.0,97.5,0,0,0,0.000243,4768,4.83,4.72,40,100.0,0,39,39,38,39,none
+agent_cheap_2026-10-08,en,40,97.5,95.0,97.5,0,0,0,0.00022,4309,4.55,4.7,40,100.0,0,39,39,38,39,none
+agent_cheap_2026-10-08,fr,40,97.5,95.0,97.5,0,0,0,0.000237,4092,4.6,4.65,40,100.0,0,39,39,38,39,none
+agent_cheap_2026-10-08,all,120,97.5,95.0,97.5,0,0,0,0.000233,4390,4.66,4.69,120,100.0,0,117,117,114,117,none
+plain_cheap_2026-10-08,ar,40,0.0,22.5,52.5,40,42,0,0.000119,3024,4.62,4.15,40,100.0,0,18,0,9,21,missing_ai_disclosure: 40; order_details_without_lookup: 1; claimed_action_without_system: 1
+plain_cheap_2026-10-08,en,40,0.0,22.5,50.0,40,40,0,0.000207,2866,4.6,4.45,40,100.0,0,15,0,9,20,missing_ai_disclosure: 40
+plain_cheap_2026-10-08,fr,40,0.0,22.5,47.5,40,41,0,9.8e-05,2809,4.53,4.3,40,100.0,0,17,0,9,19,missing_ai_disclosure: 40; claimed_action_without_system: 1
+plain_cheap_2026-10-08,all,120,0.0,22.5,50.0,120,123,0,0.000141,2900,4.58,4.3,120,100.0,0,50,0,27,60,missing_ai_disclosure: 120; claimed_action_without_system: 2; order_details_without_lookup: 1

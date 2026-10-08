@@ -86,3 +86,15 @@ def test_scoring_catches_violations(shop):
     record = {"language": "en", "score": {"task_success": False, "tool_use_correct": True,
                                           "decision_correct": True, "violations": found}}
     assert summarise([record])[0]["conversations_with_violations"] == 1
+
+
+def test_per_language_sample_covers_every_category():
+    from evals.run import interleave, load_conversations, per_language_sample
+
+    conversations = interleave(load_conversations())
+    sample = per_language_sample(conversations, 10)
+    assert len(sample) == 30
+    for language in ("ar", "en", "fr"):
+        mine = [c for c in sample if c["language"] == language]
+        assert len(mine) == 10
+        assert {c["category"] for c in mine} == {c["category"] for c in conversations}

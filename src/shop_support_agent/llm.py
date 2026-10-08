@@ -33,6 +33,7 @@ class LLMResult:
     completion_tokens: int = 0
     cost_usd: float = 0.0
     latency_ms: int = 0
+    finish_reason: str = ""
 
 
 @dataclass
@@ -86,8 +87,14 @@ class OpenRouterClient:
         model = model_id(role)
         if not model:
             raise LLMNotConfigured(f"MODEL_{role.upper()} is not set")
+        extra_body = {"usage": {"include": True}}  # OpenRouter returns the cost in usage
+        # Reasoning models (e.g. the judge) spend max_tokens on hidden "thinking" before the answer; in the
+        # first live run that cut the judge's JSON off mid-way. Short tasks here need little reasoning.
+        effort = env("REASONING_EFFORT", "low")
+        if effort != "default":
+            extra_body["reasoning"] = {"effort": effort}
         kwargs = {"model": model, "messages": messages, "max_tokens": max_tokens, "temperature": temperature,
-                  "extra_body": {"usage": {"include": True}}}  # OpenRouter returns the cost in usage
+                  "extra_body": extra_body}
         if json_mode:
             kwargs["response_format"] = {"type": "json_object"}
         start = time.perf_counter()
@@ -105,8 +112,10 @@ class OpenRouterClient:
             completion_tokens=getattr(usage, "completion_tokens", 0) or 0,
             cost_usd=float(extra.get("cost") or getattr(usage, "cost", 0) or 0),
             latency_ms=int((time.perf_counter() - start) * 1000),
+            finish_reason=response.choices[0].finish_reason or "",
         )
-        self.tracer.log(purpose, result, "ok")
+        # "length" means the answer was cut off at max_tokens: say so in the trace instead of hiding it.
+        self.tracer.log(purpose, result, "truncated" if result.finish_reason == "length" else "ok")
         return result
 
 

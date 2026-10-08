@@ -60,7 +60,9 @@ flowchart TD
 | `update_address` | Agent queues it | Verified customer, order still `processing` | A team member |
 
 The model can never move an action to "approved": only `CrmStore.decide()` does that, and only the
-Approvals tab calls it.
+Approvals tab calls it. The reviewer's ID and role come from configuration (`APPROVER_ID`, `APPROVER_ROLE`;
+unknown roles count as "team"), not from a choice on the page. In a real deployment they would come from the
+reviewer's signed-in account (single sign-on), and the ID is written to `approval_log.jsonl`.
 
 ## Idempotency (why a retry never pays twice)
 

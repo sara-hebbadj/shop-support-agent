@@ -1,0 +1,14 @@
+# P8 probe (14-ai-governance-pack/repo/scripts/probe_p1.py, unchanged) re-run against P1 after the DR-1 fix
+# date: 2026-10-08T16:39:51+04:00
+# command: SHOP_RUNTIME_DIR=<tmp> TRACES_PATH=<tmp>/traces.jsonl python <P8>/scripts/probe_p1.py   (no API key used, no model calls)
+DR-1 leak filter format variants (guards.find_leaks):
+  phone, exact                 caught=True
+  phone, no spaces             caught=True
+  phone, local 05x format      caught=True
+  phone, Arabic-Indic digits   caught=True
+  email, upper case            caught=True
+  name, exact                  caught=True
+  => caught 6 of 6 variants
+DR-4 model outage fallback (every model call raises an error):
+  en order status        outcome=status_shared  first line: Hi! I'm Lumi Skin's AI assistant, not a human. You can ask for a person at any time.
+  ar asks for a person   outcome=handover       first line: مرحبًا! أنا المساعد الذكي لمتجر لومي سكين، ولست موظفًا بشريًا. يمكنك طلب التحدث إلى أحد الموظفين في أي وقت.

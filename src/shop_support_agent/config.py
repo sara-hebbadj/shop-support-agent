@@ -44,5 +44,19 @@ def model_id(role: str) -> str:
     return env(f"MODEL_{role.upper()}")
 
 
+APPROVER_ROLES = ("team", "supervisor")
+
+
+def approver() -> dict:
+    """The reviewer using the Approvals tab. Set in configuration by whoever runs the app, never chosen on screen.
+
+    APPROVER_ID is written to approval_log.jsonl (default "demo-reviewer").
+    APPROVER_ROLE is "team" (default) or "supervisor"; any other value counts as "team" (least privilege).
+    In a real deployment both would come from the reviewer's signed-in account (see docs/architecture.md).
+    """
+    role = env("APPROVER_ROLE", "team").lower()
+    return {"id": env("APPROVER_ID", "demo-reviewer"), "role": role if role in APPROVER_ROLES else "team"}
+
+
 def demo_message_limit() -> int:
     return int(env("DEMO_MESSAGE_LIMIT", "20"))

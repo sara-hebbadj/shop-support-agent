@@ -233,7 +233,8 @@ class SupportAgent:
 
     def check(self, state: AgentState) -> dict:
         """Policy check before anything is said to the customer."""
-        events = guards.approval_problems(state.get("approval"))
+        # Keep the events of earlier nodes (e.g. the intent fallback): this node used to overwrite them.
+        events = list(state.get("guard_events", [])) + guards.approval_problems(state.get("approval"))
         order = state["facts"].get("order")
         if order and self.shop.orders[order["order_id"]]["customer_id"] != state.get("verified_customer_id"):
             events.append("order of another customer reached the reply step; removed")
@@ -253,7 +254,7 @@ class SupportAgent:
     def respond(self, state: AgentState) -> dict:
         language = state["language"]
         facts = self._reply_facts(state)
-        reply = self._write_reply(state, facts)
+        reply, used_template = self._write_reply(state, facts)
         # Text the customer already saw or typed is "public": repeating it is not a leak.
         public_parts = [m["content"] for m in state["messages"] if m["role"] == "user"]
         public_parts += [d["text"] for d in state.get("docs", [])]
@@ -261,6 +262,8 @@ class SupportAgent:
         public_text = " ".join(public_parts)
         leaks = guards.find_leaks(reply, self.shop, state.get("verified_customer_id"), public_text)
         events = list(state.get("guard_events", []))
+        if used_template:
+            events.append("reply model failed: used template fallback")
         if leaks:  # never send another customer's data, whatever the model wrote
             events.append(f"blocked reply containing other customers' data ({len(leaks)} items)")
             reply = rules.render_reply("refused", language, facts)
@@ -278,7 +281,7 @@ class SupportAgent:
         approval = {**approval, **decided}
         facts = {**self._reply_facts(state), "approval": approval,
                  "outcome": "approved" if approval.get("status") == "approved" else "denied"}
-        reply = self._write_reply(state, facts)
+        reply, _ = self._write_reply(state, facts)
         return {"messages": [{"role": "assistant", "content": reply}], "reply": reply, "approval": approval}
 
     # ------------------------------------------------------------------ routing
@@ -320,15 +323,19 @@ class SupportAgent:
             raw["fallback"] = True
         return {**clean_intent(raw), "fallback": bool(raw.get("fallback"))}
 
-    def _write_reply(self, state: AgentState, facts: dict) -> str:
+    def _write_reply(self, state: AgentState, facts: dict) -> tuple[str, bool]:
+        """Returns (reply, used_template). used_template is True when the model failed."""
         messages = prompts.reply_messages(state["language"], facts, state.get("docs", []),
                                           state["messages"][-5:-1], state["messages"][-1]["content"])
         try:
-            return self.llm.complete(messages, role="main", purpose="reply", max_tokens=400).text.strip()
+            text = self.llm.complete(messages, role="main", purpose="reply", max_tokens=400).text.strip()
+            if not text:
+                raise ValueError("empty reply from model")
+            return text, False
         except LLMNotConfigured:
             raise
         except Exception:  # model down: fixed template, so the customer still gets an answer (error is traced)
-            return rules.render_reply(facts["outcome"], state["language"], facts)
+            return rules.render_reply(facts["outcome"], state["language"], facts), True
 
     def _reply_facts(self, state: AgentState) -> dict:
         facts = {k: v for k, v in state.get("facts", {}).items() if k != "policy"}

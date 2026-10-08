@@ -20,7 +20,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))  # run with
 import gradio as gr  # noqa: E402
 
 from shop_support_agent.agent import SupportAgent  # noqa: E402
-from shop_support_agent.config import demo_message_limit, env  # noqa: E402
+from shop_support_agent.config import approver, demo_message_limit, env  # noqa: E402
 from shop_support_agent.crm_server import default_store  # noqa: E402
 from shop_support_agent.data import load_shop_data  # noqa: E402
 from shop_support_agent.llm import make_client  # noqa: E402
@@ -36,6 +36,12 @@ BANNER = (
     "**Lumi Skin support agent** (fictional shop, synthetic data). You are chatting with an AI assistant. "
     "Refunds and address changes wait for a human in the **Approvals** tab; refunds above AED 200 need a "
     "supervisor.\n\n"
+    # The same notice in Arabic and French (machine-written; to be checked by a native speaker).
+    "أنت تتحدث مع مساعد ذكي، وليس مع موظف (متجر وهمي وبيانات مصطنعة). طلبات الاسترداد وتغيير العنوان تنتظر "
+    "موافقة موظف في تبويب الموافقات، والمبالغ التي تتجاوز 200 درهم تحتاج إلى موافقة مشرف.\n\n"
+    "Vous discutez avec un assistant IA, pas avec un humain (boutique fictive, données synthétiques). Les "
+    "remboursements et changements d'adresse attendent la validation d'une personne dans l'onglet Approvals ; "
+    "au-delà de 200 AED, celle d'un superviseur.\n\n"
     + ("**Offline mode:** no API key found, so replies come from fixed templates (keyword rules), "
        "not from a language model." if OFFLINE else f"Demo mode: model `{env('MODEL_CHEAP')}`, "
        f"{LIMIT} messages per session.")
@@ -89,11 +95,19 @@ def approvals_rows() -> list[list]:
             for a in reversed(store.list_approvals())]
 
 
-def decide(approval_id: str, role: str, approve: bool, history: list, session: dict):
+def reviewer_note() -> str:
+    who = approver()
+    return (f"Reviewer: **{who['id']}** ({who['role']}). The role comes from the app's configuration "
+            "(`APPROVER_ID`, `APPROVER_ROLE`), not from this page.")
+
+
+def decide(approval_id: str, approve: bool, history: list, session: dict):
+    """A human decision. The reviewer's role comes from configuration (approver()), never from the page."""
     session = session or new_session()
     if not approval_id:
         return approvals_rows(), history, session, "Choose an approval ID first."
-    item = store.decide(approval_id.strip(), approve, reviewer="demo reviewer", role=role)
+    who = approver()
+    item = store.decide(approval_id.strip(), approve, reviewer=who["id"], role=who["role"])
     if not item.get("ok"):
         return approvals_rows(), history, session, f"Not applied: {item.get('error')}"
     note = f"{approval_id}: {item['status']} by {item['decided_by']}"
@@ -123,18 +137,17 @@ with gr.Blocks(title="Lumi Skin support agent") as demo:
         gr.Markdown("Pending refunds and address changes. Every decision is logged to `runtime/approval_log.jsonl`.")
         table = gr.Dataframe(approvals_rows, headers=["approval_id", "action", "order_id", "amount_aed", "level",
                                                       "status", "details", "decided_by"], every=5)
-        with gr.Row():
-            approval_id = gr.Textbox(label="Approval ID (e.g. A-0001)")
-            role = gr.Radio(["team", "supervisor"], value="team", label="Reviewer role")
+        gr.Markdown(reviewer_note())
+        approval_id = gr.Textbox(label="Approval ID (e.g. A-0001)")
         with gr.Row():
             approve_btn = gr.Button("Approve", variant="primary")
             deny_btn = gr.Button("Deny")
         status = gr.Markdown()
 
     box.submit(send, [box, chat, session], [box, chat, session, trace])
-    approve_btn.click(lambda a, r, h, s: decide(a, r, True, h, s), [approval_id, role, chat, session],
+    approve_btn.click(lambda a, h, s: decide(a, True, h, s), [approval_id, chat, session],
                       [table, chat, session, status])
-    deny_btn.click(lambda a, r, h, s: decide(a, r, False, h, s), [approval_id, role, chat, session],
+    deny_btn.click(lambda a, h, s: decide(a, False, h, s), [approval_id, chat, session],
                    [table, chat, session, status])
 
 

@@ -46,7 +46,7 @@ def judge_conversation(llm, conv: dict, replies: list[str]) -> dict:
     system = JUDGE_SYSTEM.replace("{language}", conv["language"])
     user = f"<transcript>\n{as_prompt_data(transcript(conv['turns'], replies), 6000)}\n</transcript>"
     result = llm.complete([{"role": "system", "content": system}, {"role": "user", "content": user}],
-                          role="judge", purpose="judge", json_mode=True, max_tokens=200)
+                          role="judge", purpose="judge", json_mode=True, max_tokens=400)
     data = parse_json(result.text)
     return {"tone": int(data.get("tone", 0)), "helpfulness": int(data.get("helpfulness", 0)),
             "language_ok": bool(data.get("language_ok")), "reason": str(data.get("reason", ""))[:300]}

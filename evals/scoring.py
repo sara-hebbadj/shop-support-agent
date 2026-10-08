@@ -87,7 +87,7 @@ def summarise(records: list[dict]) -> list[dict]:
         def pct(key, items=group, total=n):
             return round(100 * sum(bool(r["score"][key]) for r in items) / total, 1)
 
-        judged = [r for r in group if r.get("judge")]
+        judged = [r for r in group if r.get("judge")]  # conversations where the judge answered
         rows.append({
             "language": language,
             "n": n,
@@ -102,6 +102,10 @@ def summarise(records: list[dict]) -> list[dict]:
             "avg_judge_tone": round(sum(r["judge"]["tone"] for r in judged) / len(judged), 2) if judged else "",
             "avg_judge_helpfulness":
                 round(sum(r["judge"]["helpfulness"] for r in judged) / len(judged), 2) if judged else "",
+            "judge_n": len(judged),
+            "judge_language_ok_pct":
+                round(100 * sum(bool(r["judge"]["language_ok"]) for r in judged) / len(judged), 1) if judged else "",
+            "judge_errors": sum(bool(r.get("judge_error")) for r in group),
         })
     return rows
 

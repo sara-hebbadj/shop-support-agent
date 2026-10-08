@@ -7,9 +7,10 @@
    break. I built an agent where the model talks and plain code decides."
 2. **Demo (2 min).** `python app/app.py`. Ask "Where is my order?" → it asks for order ID + email. Paste a
    demo order from the accordion → status and courier update. In French, ask for a refund of an unopened
-   order above AED 200 → "a supervisor will review". Open **Approvals**, try to approve as "team" → refused;
-   approve as "supervisor" → the customer gets the update in the chat. Finally ask for someone else's order
-   → blocked.
+   order above AED 200 → "a supervisor will review". Open **Approvals**: the reviewer's role comes from the
+   configuration (`APPROVER_ROLE`, default "team"), not from the page, so approving is refused. Restart with
+   `APPROVER_ROLE=supervisor` → approve → the customer gets the update in the chat. Finally ask for someone
+   else's order → blocked.
 3. **Graph (2 min).** Open `agent.py`, `_build()`. Walk the nodes: understand → verify → retrieve → act →
    check → respond → wait_for_approval. Point out that the routing functions are tiny `if` statements.
 4. **Guardrails (2 min).** `verify()` (ID + email), `crm.approval_level()` (AED 200), `CrmStore.decide()`
@@ -32,7 +33,9 @@
 3. **How do you stop leaking another customer's data?** Order details only after the order ID and the email
    on that order match (`verify`). A verified customer asking about another order is checked again. The
    courier API never returns emails or phones. Finally `find_leaks` scans every reply for other customers'
-   emails, phones, names, addresses and order IDs and replaces the reply if it finds one.
+   emails, phones, names, addresses, order and tracking IDs and replaces the reply if it finds one. It
+   compares normalised text, so "0500004119", "+٩٧١ ٥٠ ٠٠٠ ٤١١٩", "emily dot mitchell at example dot com" and
+   "MITCHELL, Emily" still count (the first version compared exact strings and missed 3 of 6 spellings).
 4. **How do you handle prompt injection?** Customer text and retrieved text are wrapped in tags as data;
    angle brackets are neutralised so a message cannot close the tag. More importantly, the model cannot
    approve anything: approvals live in `CrmStore.decide()`, which only the Approvals tab calls. Tests use a

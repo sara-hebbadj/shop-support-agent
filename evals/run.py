@@ -5,6 +5,7 @@ Examples:
   python -m evals.run --system agent --model cheap --limit 10
   python -m evals.run --system agent --model main --judge  # full run + LLM judge for tone
   python -m evals.run --system plain --model main          # plain LLM, no tools
+  python -m evals.run --system agent --model main --per-lang 10 --judge   # 30 conversations, all categories
   python -m evals.run --system agent --dry-run             # FAKE model: proves the pipeline, NOT real results
 
 Real runs write to evals/results/, dry runs to evals/dry_run/. Each run writes:
@@ -48,6 +49,18 @@ def interleave(conversations: list[dict]) -> list[dict]:
     return [by_lang[lang][i] for i in range(longest) for lang in ("ar", "en", "fr") if i < len(by_lang[lang])]
 
 
+def per_language_sample(conversations: list[dict], per_lang: int) -> list[dict]:
+    """N conversations per language spread over all categories: variant "a" of every category, then "b", ...
+    Used for the smaller MODEL_MAIN comparison run (e.g. --per-lang 10 = 30 conversations)."""
+    categories = list(dict.fromkeys(c["category"] for c in conversations))  # file order
+    picked = []
+    for language in ("ar", "en", "fr"):
+        items = [c for c in conversations if c["language"] == language]
+        items.sort(key=lambda c: (c["id"].rsplit("-", 1)[1], categories.index(c["category"])))
+        picked += items[:per_lang]
+    return interleave(picked)
+
+
 def run_agent(agent: SupportAgent, conv: dict) -> dict:
     start = time.perf_counter()
     state = {}
@@ -83,6 +96,8 @@ def main() -> None:
                         help="'cheap' runs every agent call on MODEL_CHEAP; 'main' uses MODEL_MAIN for replies")
     parser.add_argument("--limit", type=int, default=0, help="only the first N conversations (mixed languages)")
     parser.add_argument("--lang", choices=["ar", "en", "fr"])
+    parser.add_argument("--per-lang", type=int, default=0,
+                        help="N conversations per language, spread over the 8 categories (e.g. 10 -> 30)")
     parser.add_argument("--judge", action="store_true", help="score tone/helpfulness with MODEL_JUDGE")
     parser.add_argument("--dry-run", action="store_true", help="use the FAKE model (not real results)")
     args = parser.parse_args()
@@ -90,7 +105,8 @@ def main() -> None:
     out_dir = EVALS_DIR / ("dry_run" if args.dry_run else "results")
     out_dir.mkdir(parents=True, exist_ok=True)
     model_label = "none" if args.system == "rules" else ("fake" if args.dry_run else args.model)
-    subset = (f"_{args.lang}" if args.lang else "") + (f"_first{args.limit}" if args.limit else "")
+    subset = (f"_{args.lang}" if args.lang else "") + (f"_first{args.limit}" if args.limit else "") \
+        + (f"_{args.per_lang}perlang" if args.per_lang else "")
     run_id = f"{args.system}_{model_label}{subset}_{date.today().isoformat()}"
     tracer = Tracer(path=out_dir / "traces.jsonl", context={"run_id": run_id})
 
@@ -104,8 +120,12 @@ def main() -> None:
         llm = FakeLLM(tracer) if args.dry_run else \
             OpenRouterClient(tracer, role_override="cheap" if args.model == "cheap" else None)
     run_one = build_system(args.system, llm, crm)
+    # The judge also scores the rules bot's template replies, so tone can be compared across all systems.
+    judge_llm = llm or (OpenRouterClient(tracer) if args.judge and not args.dry_run else None)
 
     conversations = interleave(load_conversations())
+    if args.per_lang:
+        conversations = per_language_sample(conversations, args.per_lang)
     if args.lang:
         conversations = [c for c in conversations if c["language"] == args.lang]
     if args.limit:
@@ -125,13 +145,20 @@ def main() -> None:
                       "handover": False, "latency_ms": 0}
             error = f"{type(exc).__name__}: {exc}"[:300]
         totals = tracer.totals.get(conv["id"], {})
+        system_cost = totals.get("cost_usd", 0.0)  # before the judge runs (the tracer keeps adding to totals)
         record = {"id": conv["id"], "language": conv["language"], "category": conv["category"],
                   "system": args.system, "model": model_label, **result, "error": error,
-                  "cost_usd": round(totals.get("cost_usd", 0.0), 6), "tokens": totals.get("tokens", 0),
+                  "cost_usd": round(system_cost, 6), "tokens": totals.get("tokens", 0),
                   "expected": conv["expected"]}
         record["score"] = score(conv, result, shop, store._load(), public)
-        if args.judge and llm and result["replies"]:
-            record["judge"] = judge_conversation(llm, conv, result["replies"])
+        if args.judge and judge_llm and result["replies"]:
+            try:  # a bad judge answer must not stop the run (it did in the first smoke run)
+                record["judge"] = judge_conversation(judge_llm, conv, result["replies"])
+            except Exception as exc:
+                record["judge_error"] = f"{type(exc).__name__}: {exc}"[:300]
+            # The judge is evaluation overhead, not the system's cost: keep it in its own field.
+            judged_total = tracer.totals.get(conv["id"], {}).get("cost_usd", 0.0)
+            record["judge_cost_usd"] = round(judged_total - system_cost, 6)
         records.append(record)
         mark = "ok " if record["score"]["task_success"] else "BAD"
         print(f"[{number}/{len(conversations)}] {mark} {conv['id']}: {result['outcome']}")

@@ -1,5 +1,5 @@
-language,n,task_success_pct,tool_use_correct_pct,decision_correct_pct,conversations_with_violations,violation_count,errors,avg_cost_usd,avg_latency_ms,avg_judge_tone,avg_judge_helpfulness
-ar,40,62.5,80.0,85.0,0,0,0,0.0,2,,
-en,40,67.5,77.5,87.5,0,0,0,0.0,2,,
-fr,40,60.0,75.0,85.0,0,0,0,0.0,2,,
-all,120,63.3,77.5,85.8,0,0,0,0.0,2,,
+language,n,task_success_pct,tool_use_correct_pct,decision_correct_pct,conversations_with_violations,violation_count,errors,avg_cost_usd,avg_latency_ms,avg_judge_tone,avg_judge_helpfulness,judge_n,judge_language_ok_pct,judge_errors
+ar,40,62.5,80.0,85.0,0,0,0,0.0,4,4.15,3.75,40,100.0,0
+en,40,67.5,77.5,87.5,0,0,0,0.0,4,4.08,3.67,40,100.0,0
+fr,40,60.0,75.0,85.0,0,0,0,0.0,4,3.85,3.45,40,100.0,0
+all,120,63.3,77.5,85.8,0,0,0,0.0,4,4.03,3.62,120,100.0,0
