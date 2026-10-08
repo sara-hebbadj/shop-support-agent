@@ -9,8 +9,10 @@
    demo order from the accordion → status and courier update. In French, ask for a refund of an unopened
    order above AED 200 → "a supervisor will review". Open **Approvals**: the reviewer's role comes from the
    configuration (`APPROVER_ROLE`, default "team"), not from the page, so approving is refused. Restart with
-   `APPROVER_ROLE=supervisor` → approve → the customer gets the update in the chat. Finally ask for someone
-   else's order → blocked.
+   `APPROVER_ROLE=supervisor`, ask for the refund again in a new chat → approve → the customer gets the update
+   in the chat. (The request from before the restart is still in the queue and can be approved, but that
+   customer is **not** notified: the paused conversation lived in memory and was lost with the restart.)
+   Finally ask for someone else's order → blocked.
 3. **Graph (2 min).** Open `agent.py`, `_build()`. Walk the nodes: understand → verify → retrieve → act →
    check → respond → wait_for_approval. Point out that the routing functions are tiny `if` statements.
 4. **Guardrails (2 min).** `verify()` (ID + email), `crm.approval_level()` (AED 200), `CrmStore.decide()`
@@ -49,14 +51,19 @@
    interrupted node has no side effects before `interrupt()`, because LangGraph re-runs it on resume.
 7. **What does a conversation cost, and how would you cut it?** Two model calls per turn (intent on
    `MODEL_CHEAP`, reply on `MODEL_MAIN`); every call is logged with tokens and OpenRouter's cost in
-   `traces.jsonl`. Live numbers are pending. To cut cost: cheap model for both calls on simple intents,
-   template replies for fixed outcomes like "please verify", and caching policy text.
+   `traces.jsonl`. Live run, 8 October 2026: US$0.000233 and 4.4 s per conversation on average with
+   `gpt-6-luna` for both calls (120 conversations); with `claude-sonnet-5.5` writing the replies, US$0.005003
+   and 5.4 s (30 conversations), about 21× more, for the same 30/30 task success on those 30. To cut cost:
+   cheap model for both calls on simple intents, template replies for fixed outcomes like "please verify",
+   and caching policy text.
 8. **How did you evaluate it?** 120 scripted conversations with expected outcome, tools and decision;
    metrics per language; two baselines (keyword rules, plain LLM without tools); an LLM judge for tone from
    a different model family; and 20 conversations I grade by hand to measure agreement with the judge.
 9. **Show one failure and the fix.** The output leak filter blocked the agent's own "e.g. LS-10001" example
    because that ID belongs to a synthetic customer. I changed the filter so text from the policies or typed
-   by the customer counts as public. (Replace with a failure from the live run once it exists.)
+   by the customer counts as public. From the live run (8 October 2026): the angry customer "d" failed in all
+   three languages (the agent asked what the customer needed instead of handing over); I did not change the
+   prompt, because tuning it to pass those three conversations would be fitting the test set.
 10. **What changes before connecting a real CRM such as Zoho?** OAuth and least-privilege API scopes, a real
     database and audit log instead of JSON files, PII redaction in traces, rate limits and retries with
     idempotency keys on the CRM side, a DPA and data-residency review (UAE PDPL), and a pilot with human

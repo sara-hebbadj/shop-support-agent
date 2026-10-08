@@ -5,7 +5,9 @@ orders, answers policy and product questions, and **asks a human before any refu
 
 ## Demo
 
-Live hosted demo: coming soon (Hugging Face Space).
+**Live demo:** [huggingface.co/spaces/sarahebbadj/shop-support-agent](https://huggingface.co/spaces/sarahebbadj/shop-support-agent) (works without an API key, in demo mode).
+
+To enable live AI on your own copy: add `OPENROUTER_API_KEY` as a Space secret (and `MODEL_CHEAP` as a variable).
 
 Screenshots from a local run on 8 October 2026 with live AI (`openai/gpt-6-luna` through OpenRouter) and
 the reviewer role set to `supervisor` (`APPROVER_ROLE`). All customers and orders are synthetic. Run it
@@ -301,7 +303,11 @@ Code and data: MIT licence.
 - The Arabic and French conversations, policies and templates were machine-written and need a native
   speaker's review (Sara) for naturalness. Dialect coverage (Gulf, Maghrebi) is thin.
 - While an approval is pending, that customer's chat pauses; production would notify asynchronously.
-- The CRM and approval queue are JSON files and the checkpointer is in memory: a demo, not production.
+- The CRM and approval queue are JSON files and the checkpointer is in memory: a demo, not production. One
+  consequence: if the app is restarted (for example with `APPROVER_ROLE=supervisor`) while a request is
+  pending, the request stays in the queue and can still be approved or rejected, but the customer is **not**
+  notified, because the paused conversation was lost with the restart. A persistent checkpointer (e.g.
+  SQLite) plus an asynchronous notification would fix this.
 - The evaluation set is small, scripted and written by the same author as the bot; add real anonymised
   phrasing (with permission) and repeated runs for variance.
 - Next: Langfuse tracing and a cost dashboard, a WhatsApp-style channel mock, recorded-response regression
